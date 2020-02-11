@@ -1,0 +1,203 @@
+<html>
+        <head>
+            <title>Istorija | BTC </title>
+            <link rel="icon" href="Images/ikonica.png" type="image.jpg">
+            <link href="style/blank.css" rel="Stylesheet" type="text/css" />
+            <link href="style/stil.css" rel="Stylesheet" type="text/css" />
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <style>
+
+        li.dropdown {
+                display: inline-block;
+        }
+        .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color:#011A27;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                min-width: 150px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+        }
+        .dropdown-content a {
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        .dropdown:hover .dropdown-content {
+                display: block;
+        }
+        body{
+                background: url("bg.jpg");
+                padding: 2rem 0;
+                width: 100%;
+                height: 100vh;
+                background-size: 100% 100%;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                padding: 0;
+                margin: 0;
+            }
+        label{
+                margin-left:185px;
+        }
+        label p{
+                margin-left:40px;
+                margin-top:25px;
+        }
+        input[type=text]{
+                margin-left: 40px;
+                height: 30px;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                margin-top: 6px;
+                box-sizing: border-box;
+        }
+        input[type=email]{
+                margin-left: 70px;
+                height: 30px;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                margin-top: 6px;
+                box-sizing: border-box;
+        }
+        font i{
+                margin-left: 80px;
+                margin-top: 30px;
+        }
+        </style>
+        </head>
+        
+        <body>
+                <div id="wraper">
+            <div id="heder">
+                <marquee behavior="scroll" direction="left" scrollamount="7">
+                    <img src="Images/bglogo.png">
+                    </marquee>
+            </div>
+        
+					<ul>
+						<li><a href="naslovna.html"><i class="fa fa-home" aria-hidden="true"><p style="margin-left:10px;margin-top:5px;">Pocetna</p></i></a></li>
+						<li><a href="btc.html"><i class="fa fa-btc" aria-hidden="true"> <p style="margin-left:10px;margin-top:5px;">BTC</p></i></a></li>
+						<li><a href="galerija.html"><i class="fa fa-picture-o" aria-hidden="true"><p style="margin-left:10px;margin-top:5px;">Galerija</p></i></a></li>
+						<li class="dropdown">
+									<a href="autor.html"><i class="fa fa-user" aria-hidden="true"></i><p style="margin-left:10px;margin-top:5px;">Autor</p></i></a>
+								<div class="dropdown-content">
+									<a href="wallet.html" class="dropbtn"><i class="fa fa-history" aria-hidden="true"><p style="margin-left:10px;margin-top:5px;">Istorija</p></i></a>
+									<a href="block.html"><i class="fa fa-cube" aria-hidden="true"></i><p style="margin-left:10px;margin-top:5px;">Block</p></i></a>
+								</div>
+
+					   <li style="margin-left: 200px"> <button id="myBtn" style="margin-left:60px"><i class="fa fa-id-card-o" aria-hidden="true"><p style="margin-left:10px;margin-top:5px;">Kontakt</p></i></button> </li> 
+					</ul>
+      <div id="myModal" class="modal">
+      
+      <div class="modal-content">
+      <div class="contactus"><img src="Images/kontaktus.png" width="25%" style="margin-left: 30px;">
+      <span class="close">&times;</span></div>
+      <label for="fname"><p>Ime:</label>
+        
+
+        <label for="lname">Prezime:</label>
+        
+        
+        <label for="email">Email:</p></label>
+      
+        <input type="text" id="fname" name="fname" value="" placeholder="first name">
+
+        <input type="text" id="lname" name="lname" value="" placeholder="last name">
+
+        <input type="email" id="email" name="email" value="" placeholder="email">
+        
+        
+
+        <font size="2" face="Tahoma">
+                <p style="margin-left:35px;margin-top:35px">Izaberite vrstu pitanja: <select name"question"></p>
+                        <option value="Pitanje">Pitanje</option>
+                        <option value="Zanimljivost">Zanimljivost</option>
+                        <option value="Bagovi">Bagovi</option><br/>
+                        <option value="Predlozi">Predlozi</option><br/>
+                        <option value="Zamerke">Zamerke</option><br/>
+                        </select>
+        </font><br/><br/>
+        
+        <textarea placeholder="Upisite zeljeni tekst.."></textarea><br/>
+
+        <font size="5">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+    
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    
+            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></font>
+        
+        <p style="margin-right:100px;"><input type="submit" value="Posalji"> </p>
+
+      </div>
+      </div>
+
+    <div id="novcanik1">
+       <h1 align="center" style="padding-top:20px;">Bitkoin istorija, rudnik, promene cena, budućnost</h1>
+       <p align="center" style="margin-top:30px; "><img src="Images/istorija.jpg" style="border:2px solid white"></p>
+
+       <p align="justify" style="margin:20px 20px 0 20px">Bitkoinova valuta i kriptoanalitički su brzo rastući oblik elektronskog novca. Najpopularnija kriptovaliuta je Bitkoin, koji je prvi kreirao anonimna osoba ili grupa ljudi, ali je javno objavio da je tvorac Bitkoina izmišljen od strane Satoshi Nakamoto. Bitkainska valuta je blokirana tehnologija je zasnovana na stvaranju virtualnog novca koristeći siguran i anonimni kanal. Da bi prenosili Bitkoin ili njegove dijelove (Satoshis) sa jednog računa na drugi, neophodni su superračunari, koji takodje obavljaju ovaj posao u rešavanju složenih algoritama koji garantuju sigurnost transakcije i anonimnost. U suštini, ne bi bilo Bitkoin valute, ukoliko nije bilo superračunara koji odobravaju transakcije, a Bitkoin ne bi bio toliko popularan ako se broj transakcija ne proširi.</p><br/><br/>
+       <p align="justify" style="margin:0 20px 0 20px">Računari za fiksiranje transakcija, takođe nazvanih BitkoinMinefields, ulažu milijarde dolara, vlasnici rudnika kupuju superkompjutere koji, u skladu s pravilima, obavljaju sve složene zadatke za odobravanje Bitkoin transakcija. Za odobravanje transakcija, vlasnici rudnika stvaraju Bitkoine i primaju ih na svoje račune. Kopanje bitkoina je bilo relativno jednostavno, jer nije bilo tako široko korišteno, bilo je moguće koristiti svoj računar kod kuće, držati ga i napuštati bitkoine. Kako kompleksnost algoritama raste, postoje zahtevi za kompjuterskom opremom koja mora da rešava sve kompleksnije zadatke. Kaže se da započinjanje poslovanja kompanije Bitkoin i stvaranje profitabilnih zahteva najmanje 5 miliona. Dolara Procenjuje se da do danas, da biste kreirali jedan bitkoin, trebate potrošiti više od $ 1,000 (kada BTC trenutno košta 4,000 dolara), odličan posao za vlasnike rudnika. Bitkoin pravila i algoritmi obezbeđuju maksimalno kopanje Bitkoina, što je 21 miliona. Bitkoini, a sada ih je više od 16 miliona iskopano. Bitkoins. Prema tome, procenjuje se da preostalih 5 miliona. Bitkoini svakih 2140, jer algoritmi postaju složeniji, a možda i duži, u zavisnosti od vrednosti Bitkoina.</p><br/><br/>
+
+        <b style="margin: 0 20px 0 20px">Bitkoin mines</b><br/><br/>
+            
+        <p align="justify" style="margin:0 20px 0 20px">Najveći bitkoinovi rudnici nalaze se u Kini zbog veoma jeftine električne energije. Da bi osigurali Bitkoin transakcije, neophodni su ne samo super-moćni računari, već i jeftina električna energija, jer koriste veoma velike količine - jeftina električna energija mora biti profitabilna. Dakle, najveći bitkoin rudari (Bitkoin makeri) nalaze se u Kini, a druga zemlja u kojoj dominira bitkoin rudnici je Island, koji ima mnogo planina, jeftinu električnu energiju i jednostavan, sa dobrom ventilacijom zbog povoljne klime. U Češkoj Republici postoji i jedno od najvećih rudnika na kojima su se entuzijasti iskopavanja bitkoina naselili na običnim računarima u 2012. godini, a kada su vidjeli da su svi odrastali za veliki novac, iznajmili skladišta negde na periferiji Češke Republike, postavio je veliki broj računara, a zatim angažovao velike sigurnosne snage kako bi izbegao polet Velike mine se takođe nalaze u SAD-u (Kalifornija), Gruziji, Indiji, Japanu. U Litvaniji imamo puno kriptovalnih proizvođača kaseta, ali Bitkoin nije vredan kopanja, tako da su postavljene druge, profitabilnije kriptovagije</p><br/><br/>
+        
+        <b style="margin: 0 20px 0 20px">Bitkoinova priča</b><br/><br/>
+
+        <p align="justify" style="margin:0 20px 0 20px">Bitkainova priča je veoma zanimljiva. Krajem 2008. godine dokumentu je poslat elektronskoj pošti kriptografske zajednice. Bitkoin: P2P elektronski sistem gotovog novca (Bitkoin: sistem elektronskog novčanog poreza). Dakle, 2009. godine sam Satoshi Nakamoto iskopao je prvi Genesis blok, koji je dobio 50 bitkoin-a. Zatim, specijalista kriptografije Hal. Finnei je preuzeo trenutni program Bitkoina i dobio 10 bitkoins od Satoshi, prve transakcije u istoriji bitkoina. Ovo je takođe započelo sa svima upotrebljivostima, u početku se pojavilo među kriptografskim stručnjacima koji su, kako je trebalo, stvarno stvorili ceo dokument, logiku i sistem.<br/><br/>
+            
+            U 2010. godini jedno od prvih plaćanja za robu dogodilo se kada je osoba iz picerije kupila dve pice za 10 hiljada. Bitkoini (njihova vrijednost se povećala na 400 miliona dolara u toku 7 godina), koja je nazvana kao najskuplja pica u svijetu, nadamo se da su bili vrlo ukusni.</p><br/><br/>
+
+        <b style="margin: 0 20px 0 20px">Istorija vrijednosti vrijednosti bitkoina (kontinuirano ažurirana)</b><br/><br/>
+
+        <p align="center"><img src="Images/btc1.jpg"></p>
+
+        <p align="justify" style="margin:20px 20px 0 20px">Kao što vidimo Bitkoinova cijena je veoma nestabilna, varira i može pasti za 40% dnevno, ali čak može porasti. Međutim, što je veća investicija u bitkoinskim rudnicima, veća će biti ta valuta, jer će investitori, uticajni preduzetnici i dalje nastojati da razvijaju nezavisnu valutu. Bitkoin se trenutno suočava sa legalizacijom i postaje nacionalna valuta, ali to nije moguće jer je sam Bitkoin, njegovo delovanje i račun anoniman, a kako bi se integrisao u ekonomiju određene zemlje, postati druga valuta zahteva saznanje koliko je određena osoba Bitkoins račun.<br/><br/>
+            
+            BitkoinThanks za Bitkoin, možete dobiti još "crnog" novca nego što jeste, i ne vole mnoge ekonomije i vlade na svijetu koje samo žele oporezovati sve, pratiti i videti svaki cent od ljudi. Širenjem Bitkoina tako da bi počelo da koristi kritičnu masu ljudi koji dobijaju nagrade od bikarbonata, biće naplaćeni za usluge, stranke bi prikupile manje poreza jer ne bi mogle pratiti koliko ljudi zarađuju u bitkoinima. Ovo je najveći konflikt između Bitkoina i vlada koji se protive Bitkovinoj legalizaciji. Džejmi Dimon, JP Morgan, rekao je u nekoliko intervjua da su bitkeini ilegalni i da su "prevara", i ova rečenica zvučala je veoma glasno među entuzijastima Bitkoina. U istom intervjuu, on je pokrenuo vrlo interesantnu i prilično opasnu ideju, ako Bitkoin tako napreduje i dostigne kritičnu masu, nacionalnim vladama se to neće dopasti i samo bi trebale kazniti Bitkoine za krivično gonjenje i zasad u zatvor. Samo ovo bi moglo uništiti prisustvo ove valute. Iako ne misle sve zemlje.</p><br/><br/>
+        
+        
+        <b style="margin: 0 20px 0 20px">Bitkoin cene, buduća vrednost</b>
+        <p align="justify" style="margin:20px 20px 0 20px">Naravno, tehnologija blokiranja i njegova upotreba u budućim finansijskim instrumentima je neosporna, ona će se koristiti jer je veoma sigurna i pouzdana. Zbog same budućnosti Bitkoina, ima puno pitanja, ovaj kriptoat je još u ranoj fazi i imaće mnoge druge prepreke za anonimna plaćanja, finansiranje terorizma, utaja poreza itd. Ali, recimo, to je globalna valuta i ona će uspeti da izađe sa puta i postane nenacionalna valuta, valuta. Naći će se problem brzine transakcije i cene. Već je prebacivanje bitkoina sa jedne račune na drugi veoma skupo i traje prilično dugo; u ovom trenutku bitkoin za mikrokosmuse, na primer, kupiti sladoled, čokoladu ili platiti kafu, više nije pristupačan, pošto transfer košta gotovo isto koliko i proizvod. Postoje alternativne valute kao Litecoin, koje su znatno brže i jeftinije. Kako se javno kaže, Bitkoin će biti zlato za uspeh, a Liteco će biti srebro. Zlato ćete smatrati investicijom kao vrednim predmetom, a srebro će biti za mala naselja, za svakodnevnu upotrebu.<br/><br/>
+            
+            U slučaju uspeha bitkoina, ova valuta uopšte neće imati nikakav izbor u dužem periodu od 3 godine, kao bujični porast ili pad ili nestati. Sledeći, bitkoin će učiniti jeftinijim i zahtevati puno resursa, a jedan bitkoin koštaće mnogo. Ulaganje u proizvodnju virtuelne valute je ogromno, i to podstiče čitavo tržište i vjeru. Najveći problem sa kojim se suočava je legalizacija, zakoni zemalja i fiskalna pitanja. Ako je tako, bitkoin cena može da dostigne 100 i 500 hiljada. Dolari Ali isto tako može nestati. Razmislite šta će se desiti ako Bitkoin poraste do takvih ogromnih količina i bitkoini će kupiti mnogi ljudi u zemlji? Da li će svi biti milioneri? Tako lako Možda Kako ću vidjeti Samo želimo biti oprezni i cijenimo sve rizike sa čuvanjem bitkoina.</p><br/><br/>
+
+
+    </div>
+
+<div id="futer"><p align="center" style="padding-top:20px">Copyright © 2019 - All rights Reserved</p>
+</div></div>
+<script>
+        //kontakt
+        var modal = document.getElementById('myModal');
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+        </body>
+        </html>

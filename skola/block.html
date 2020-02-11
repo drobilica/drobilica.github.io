@@ -1,0 +1,207 @@
+<html>
+        <head>
+            <title>Block | BTC </title>
+            <link rel="icon" href="Images/ikonica.png" type="image.jpg">
+            <link href="style/blank.css" rel="Stylesheet" type="text/css" />
+            <link href="style/stil.css" rel="Stylesheet" type="text/css" />
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <style>
+        li.dropdown {
+                display: inline-block;
+        }
+
+        .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color:#011A27;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                min-width: 150px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+        }
+
+        .dropdown-content a {
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+                display: block;
+        }
+
+        body{
+            background: url("bg.jpg");
+            padding: 2rem 0;
+            width: 100%;
+            height: 100vh;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            padding: 0;
+            margin: 0;
+        }
+        label{
+                margin-left:185px;
+        }
+        label p{
+                margin-left:40px;
+                margin-top:25px;
+        }
+        input[type=text]{
+                margin-left: 40px;
+                height: 30px;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                margin-top: 6px;
+                box-sizing: border-box;
+        }
+        input[type=email]{
+                margin-left: 70px;
+                height: 30px;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                margin-top: 6px;
+                box-sizing: border-box;
+        }
+        font i{
+                margin-left: 80px;
+                margin-top: 30px;
+        }
+        </style>
+        </head>
+        
+        <body>
+                <div id="wraper">
+                        <div id="heder">
+                <marquee behavior="scroll" direction="left" scrollamount="7">
+                        <img src="Images/bglogo.png">
+                </marquee>
+                        </div>
+						<ul>
+					<li><a href="naslovna.html"><i class="fa fa-home" aria-hidden="true"><p style="margin-left:10px;margin-top:5px;">Pocetna</p></i></a></li>
+					<li><a href="btc.html"><i class="fa fa-btc" aria-hidden="true"> <p style="margin-left:10px;margin-top:5px;">BTC</p></i></a></li>
+					<li><a href="galerija.html"><i class="fa fa-picture-o" aria-hidden="true"><p style="margin-left:10px;margin-top:5px;">Galerija</p></i></a></li>
+					<li class="dropdown">
+								<a href="autor.html"><i class="fa fa-user" aria-hidden="true"></i><p style="margin-left:10px;margin-top:5px;">Autor</p></i></a>
+							<div class="dropdown-content">
+								<a href="wallet.html" class="dropbtn"><i class="fa fa-history" aria-hidden="true"><p style="margin-left:10px;margin-top:5px;">Istorija</p></i></a>
+								<a href="block.html"><i class="fa fa-cube" aria-hidden="true"></i><p style="margin-left:10px;margin-top:5px;">Block</p></i></a>
+							</div>
+
+				   <li style="margin-left: 200px"> <button id="myBtn" style="margin-left:60px"><i class="fa fa-id-card-o" aria-hidden="true"><p style="margin-left:10px;margin-top:5px;">Kontakt</p></i></button> </li> 
+				</ul>
+        <div id="myModal" class="modal">
+        
+        <div class="modal-content">
+        <div class="contactus"><img src="Images/kontaktus.png" width="25%" style="margin-left: 30px;">
+        <span class="close">&times;</span></div>
+
+        <label for="fname"><p>Ime:</label>
+        
+
+        <label for="lname">Prezime:</label>
+        
+        
+        <label for="email">Email:</p></label>
+      
+        <input type="text" id="fname" name="fname" value="" placeholder="first name">
+
+        <input type="text" id="lname" name="lname" value="" placeholder="last name">
+
+        <input type="email" id="email" name="email" value="" placeholder="email">
+        
+        
+
+        <font size="2" face="Tahoma">
+                <p style="margin-left:35px;margin-top:35px">Izaberite vrstu pitanja: <select name"question"></p>
+                        <option value="Pitanje">Pitanje</option>
+                        <option value="Zanimljivost">Zanimljivost</option>
+                        <option value="Bagovi">Bagovi</option><br/>
+                        <option value="Predlozi">Predlozi</option><br/>
+                        <option value="Zamerke">Zamerke</option><br/>
+                        </select>
+        </font><br/><br/>
+        
+        <textarea placeholder="Upisite zeljeni tekst.."></textarea><br/>
+
+        <font size="5">
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></font>
+        
+        <p style="margin-right:100px;"><input type="submit" value="Posalji"> </p>
+
+        </div>
+        </div>
+
+            <div id="block1">
+                        <font color="white" size="6">
+                                <p align="center" style="padding-top:20px;">Bitkoin protokol</p>
+                        </font> 
+                <p align="justify" style="margin-left: 30px; margin-right: 30px;margin-top: 20px">U ovom poglavlju opisacu glavne ideje na kojima se bazira Bitkoin protokol . Zbog
+                                lakseg razumevanja Bitkoin cu razviti u fazama. Prvo cu opisati vrlo jednostavnu digitalnu valutu koju cu nazvati Infocoin. Infocoin ce na pocetku imati mnogo nedostataka, ali u svakom koraku dodati cu joj neku funkcionalnost. Nakon odredenog broja koraka Infocoin ce biti gotovo jednak Bitcoin protokolu.
+                </p><br/>
+                <p style="margin-left: 30px; margin-right: 30px;margin-top: 20px"><b>Kako mozemo konstruirati digitalnu valutu?</b><br/></p>
+                        <p align="justify" style="margin-left: 30px; margin-right: 30px;margin-top: 20px">Zamislimmo da neka osoba posjeduje digitalni novac koji zeli potrositi. Nazovimo tu
+                                        osobu Ana. Pretpostavimo da je Anin digitalni novac predstavljen stringom bitova. Prva dva problema na koja nailazimo su: Kako se moze sprijeciti da ona taj isti string koristi vise puta tako stvarajuci beskonacnu zalihu novca? Kako sprijeciti nekoga da zloupotrebi taj string bitova i koristi ga kako bi krao od Ane? 
+                                        To su samo dva od mnogih problema koji se moraju savladati kako bi se podaci mogli koristiti kao novac.</p><br/>
+                        <p align="justify" style="margin-left: 30px; margin-right: 30px;margin-top: 20px">U prvoj verziji Infocoina pokusacu pronaci nacin da Ana koristi string bitova kao
+                                        vrlo primitivni oblik novca koji bi joj omogucio barem neku zastitu protiv falsifikovanja. Zamislimo da Ana zeli nekoj osobi, nazovimo ga Petrom, dati infocoin. Kako bi to ucinila Ana pise poruku ”Ja Ana, dajem Petru jedan infocoin”. Ana zatim stvara digitalni potpis koristeci tajni kriptografski kljuc te svima objavljuje potpisani string bitova. Ovo nije neki impresivni prototip digitalnog novca ali ipak ima neke vrline. Svi ostali korisnici, pa tako i Petar,
+                                         mogu koristiti Anin javni kljuc kako bi provjerili da je zaista Ana stvorila poruku
+                                         ”Ja Ana, dajem Petru jedan infocoin”. Niko drugi nije mogao stvoriti upravo taj string pa zbog toga Ana ne moze reci da nije mislila dati Petru infocoin. Cinjenica da niko drugi nije mogao stvoriti takvu poruku daje Ani neku ogranicenu zastitu protiv falsifikovanja. Falsifikovanje je nazalost ipak moguce u slucaju da nakon sto Ana objavi svoju poruku mrezi neko od korisnika kopira tu poruku. Ova dva svojstva: utvrdivanje namjere od strane Ane i ogranicena zastita
+                                          od falsifikovanja su najznacajnije funkcije ove verzije protokola. Vazno je jos napomenuti kako je digitalni novac u ovom primeru zapravo string bitova koji predstavljaju digitalno potpisanu poruku: ”Ja Ana, dajem Petri jedan infocoin”.</p><br/>
+                <p style="margin-left: 30px; margin-right: 30px;margin-top: 20px"><b>Eliminacija sredisnjeg autoriteta - banke</b><br/></p>
+                <p align="justify" style="margin-left: 30px; margin-right: 30px;margin-top: 20px">Iako posljednje rjesenje djeluje obecavajuce ono se moze jos poboljsati eliminacijom banke. Ideja je da svi korisnici zajedno cine banku. Pretpostaviti cemo da svi korisnici Infocoina posjeduju zapis svih transakcija. Taj zapis nazvati cemo Blockchain. Pretpostavimo da Ana zeli dati Petru jedan infocoin. To ce uciniti tako sto ce joj poslati poruku 
+                                ”Ja Ana, dajem Petrujedan infocoin, sa serijskim brojem 1234567”. Petar koristi svoju kopiju Blockchaina kako bi provjerio da je Ana zaista vlasnica infocoina sa serijskim brojem 1234567. Ukoliko se to ispostavi tacnim Petar svim korisnicima objavljuje Aninu poruku te svoje prihvacanje transakcije. Nakon toga svi korisnici azuriraju svoj Blockchain.
+                                 Problem u ovoj verziji protokola je dvostruko trosenje. Pretpostavimo da Ana posalje Petru poruku ”Ja Ana, dajem Petru jedan infocoin, sa serijskim brojem 1234567” te nedugo nakon toga Marku poruku ”Ja Ana, dajem Marku jedan infocoin, sa serijskim brojem 1234567”. I Petra i Marko ce koristiti svoju kopiju Blockchaina kako bi provjerili da li Ana zaista posjeduje infocoin sa serijskim brojem 1234567.
+                                  Ukoliko oni tu proveru obavljaju otprilike istovremeno oboje ce prihvatiti transakciju te nakon toga mrezi objaviti svoj prihvat transakcije. Na koji nacin ce u tom slucaju ostali korisnici azurirati svoj Blochchain? Cak i ukoliko se svi korisnici nekako uspiju dogovoriti o izgledu BlockChaina ili Marko ili Petar biti ce prevareni.</p><br/>
+                <p align="justify" style="margin-left: 30px; margin-right: 30px;margin-top: 20px">Kako uspjesno rjesiti problem dvostrukog trosenja? Resenje lezi u cinjenici da kada Petar dobije infocoin ne pokusava sam proveravati valjanost transakcije vec da mogucu transakciju objavi svim Infocoin korisnicima kako bi mu pomogli odluciti da li je transacija valjana. Ukoliko dovoljan broj korisnika odluci da je transakcija valjana, Petar ju prihvata. Nakon toga svi korisnici moraju azurirati svoje kopije Blockchaina.
+                                Ova verzije protokola sprecava dvostruko trosenje jer ukoliko Ana pokusa poslati isti infocoin Petru i Marku ostali kosrisnici ce to primjetiti pa transakcija nece biti potvrdena. Ova verzija protokola ima dosta nejasnih dijelova kao npr. Odakle dolaze jedinstveni serijski brojevi? Sto znaci dovoljan broj korisnika kod proveravanja valjanosti transakcije?  On sigurno ne predstavlja ukupan broj svih korisnika na mrezi jer njega ne mozemo  tacno utvrditi.
+                                Iz istog razloga on ne moze biti niti neki postotak ukupnog broja korisnika na mrezi. </p><br/>
+                <p style="margin-left: 30px; margin-right: 30px;margin-top: 20px"><b>Proof-of-work</b><br/></p>                      
+                <p align="justify" style="margin-left: 30px; margin-right: 30px;margin-top: 20px">Pretpostavimo da Ana zeli dvostruko trositi u posljednjoj opisanoj verziji protokola. To bi mogla uciniti jedino ukoliko preuzme kontrolu nad cijelom infocoin mrezom. Pretpostavimo  da Ana koristi automatizirani sustav kako bi postavila veliki broj odvojenih identiteta u infocoin mrezi, npr. milijardu. Kao i u prethodnom primjeru, pokusati ce poslati isti infocoin Petri i Marku. 
+                        Aninini lazni identiteti na mrezi objaviti ce da su obje transakcije valjane i tako navesti i Petru i Marka na prihvacanje transakcije sto znaci da se desila prevara. Postoji nacin kojim se moze izbjeci ovaj problem i on se naziva proof-of work. Proof-of-work je nastao kombinacijom dviju ideja: Prva je ta da za potvrdivanje transakcije bude potrebna racunalna snaga. Druga je ta da se korisnik nagradi za sudjelovanje u prosecu potvrdivanja odredene transakcije.
+                         Nagrada sluzi kao motivacija korisnicima da se ukljuce u proces potvrdivanja transakcija iako je za to potrebna racunalna snaga. Prednost toga da potvrdivanje transakcije iziskuje racunalnu snagu ocituje se u cinjenici da postaje gotovo nemoguce jedna osoba. Da bi se prevara ipak uspjela desiti potrebni su vrlo veliki racunalni resursi.               
+                        </p>      
+                        
+                        
+                        </div>
+  
+            <div id="futer"><p align="center" style="padding-top:20px">Copyright © 2019 - All rights Reserved </p>
+            </div></div>
+        <script>
+        //KONTAKT
+        var modal = document.getElementById('myModal');
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+                modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+                modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+                if (event.target == modal) {
+                modal.style.display = "none";
+                }
+        }
+        </script>
+
+</body>
+</html>
