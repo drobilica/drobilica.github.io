@@ -226,7 +226,7 @@
           "-M7UWNCTMO9oKAyToVCG":{
              "id":"XgKyjByWq1GOU1o4g7wJCCiNvyrmr1",
              "name":"Zoran",
-             "surname":"Nisic"
+             "surname":"Zoranovic"
           }
        },
        "text":"Banja Koviljača, jedna od naših najlepših banja, nalazi se u zapadnoj Srbiji u zagrljaju planine Gučevo i reke Drine, jedne od najdužih i vodom najbogatijih reka Balkana. Bogati izvori sumporovite vode, povoljni klimatski uslovi, kao i brojni kulturno-istorijski spomenici, neodoljiv su izazov za razvoj svih vidova turizma.",
@@ -245,7 +245,6 @@
           "student":{
              "id":"XgKyjByWqGOUo4g7wJ71iNvyrmr1",
              "name":"Milan",
-             "star":"1",
              "surname":"Savic"
           }
        },
@@ -308,7 +307,6 @@
           "-M7UWNCTMO9oKAyToVCVV":{
              "id":"XgKyjByWqGOUo4g7wJCCiNvyrmr1",
              "name":"Milos",
-             "star":"5",
              "surname":"Stojicic"
           }
        },
@@ -371,7 +369,6 @@
           "asddas213221":{
              "id":"l8WJFrIk8naSiAig2llQ4uWaQcM2",
              "name":"Milos",
-             "star":"3",
              "surname":"Stojicic"
           }
        },
@@ -391,7 +388,6 @@
           "-M7UWRFTFhU7B_T6HibO":{
              "id":"XgKyjByW1qGOUo17wJCCiNvyrmr1",
              "name":"Petar",
-             "star":"2",
              "surname":"Petrovic"
           }
        },
@@ -435,7 +431,6 @@
           "-M9OoJx2AxD9imrHvmr3":{
              "id":"XgKyjByWqGOUo4g7wJCCiNvyrmr1",
              "name":"Dusan",
-              "star":"3",
              "surname":"Stanic"
           }
        },
@@ -455,7 +450,6 @@
           "-MBFYm7RBI53gUp-af5w":{
              "id":"XgKyjByWqGOUo4g7wJCCiNvyrmr1",
              "name":"Dusan",
-             "star":"5",
              "surname":"Stanic"
           },
           "13dasd123123":{
@@ -480,7 +474,6 @@
         "-MBFYm7RBI53gUp-af5w":{
             "id":"XgKyjByWqGOUo4g7wJCCiNvyrmr1",
             "name":"Dusan",
-            "star":"5",
             "surname":"Stanic"
          }
        },
