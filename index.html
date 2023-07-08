@@ -48,8 +48,16 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3">
-                    <p class="copyright">Copyright © 2020 - <a href="https://drobilica.com/">drobilica.com</a></p>
+                    <p class="copyright">
+                        &copy; <span id="currentYear"></span> - <a href="https://drobilica.com/">drobilica.com</a>
+                    </p>
                 </div>
+                
+                <script>
+                    const currentYear = new Date().getFullYear();
+                    document.getElementById("currentYear").textContent = currentYear;
+                </script>
+                
             </div>
         </div>
     </div>
