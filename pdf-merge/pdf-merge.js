@@ -1,4 +1,3 @@
-
 const uploadArea = document.getElementById('upload-area');
 const fileInput = document.getElementById('file-input');
 const progressBar = document.getElementById('progress-bar');
@@ -16,40 +15,53 @@ uploadArea.addEventListener('drop', (event) => {
 
 async function handleFiles() {
     const files = Array.from(fileInput.files);
-    if (!files.every(file => file.type === 'application/pdf')) {
-        feedback.textContent = 'Please upload only PDF files.';
-        return;
-    }
+    if (!validateFiles(files)) return;
 
-    progressBar.style.display = 'block';
-    progressBar.style.width = '0%';
+    setUIForProcessing(true);
     feedback.textContent = 'Merging...';
 
     try {
-        const mergedPdf = await PDFLib.PDFDocument.create();
-        
-        for (let i = 0; i < files.length; i++) {
-            const file = files[i];
-            const fileBytes = await file.arrayBuffer();
-            const pdf = await PDFLib.PDFDocument.load(fileBytes);
-            const copiedPages = await mergedPdf.copyPages(pdf, pdf.getPageIndices());
-            copiedPages.forEach(page => mergedPdf.addPage(page));
-
-            // Update progress bar
-            progressBar.style.width = `${((i + 1) / files.length) * 100}%`;
-        }
-
-        const mergedPdfBytes = await mergedPdf.save();
-        const customFilename = filenameInput.value.trim() || 'merged';
+        const mergedPdfBytes = await mergeFiles(files);
+        const customFilename = getCustomFilename();
         download(mergedPdfBytes, `${customFilename}.pdf`, "application/pdf");
         feedback.textContent = 'Merge completed! Downloading...';
     } catch (error) {
-        feedback.textContent = 'An error occurred while merging the files.';
+        feedback.textContent = 'An error occurred: ' + error.message;
         console.error(error);
     } finally {
-        progressBar.style.display = 'none';
-        fileInput.value = ''; // Reset file input for next operation
+        setUIForProcessing(false);
     }
+}
+
+function validateFiles(files) {
+    if (!files.every(file => file.type === 'application/pdf')) {
+        feedback.textContent = 'Please upload only PDF files.';
+        return false;
+    }
+    return true;
+}
+
+async function mergeFiles(files) {
+    const mergedPdf = await PDFLib.PDFDocument.create();
+    
+    for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const fileBytes = await file.arrayBuffer();
+        const pdf = await PDFLib.PDFDocument.load(fileBytes);
+        const copiedPages = await mergedPdf.copyPages(pdf, pdf.getPageIndices());
+        copiedPages.forEach(page => mergedPdf.addPage(page));
+        updateProgressBar(i, files.length);
+    }
+
+    return mergedPdf.save();
+}
+
+function updateProgressBar(current, total) {
+    progressBar.style.width = `${(current + 1) / total * 100}%`;
+}
+
+function getCustomFilename() {
+    return filenameInput.value.trim() || 'merged';
 }
 
 function download(blob, filename, mimeType) {
@@ -61,4 +73,11 @@ function download(blob, filename, mimeType) {
     link.click();
     document.body.removeChild(link);
     URL.revokeObjectURL(blobUrl);
+}
+
+function setUIForProcessing(isProcessing) {
+    uploadArea.disabled = isProcessing;
+    progressBar.style.display = isProcessing ? 'block' : 'none';
+    progressBar.style.width = '0%';
+    if (!isProcessing) fileInput.value = '';
 }
