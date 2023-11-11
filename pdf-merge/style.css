@@ -1,0 +1,28 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#upload-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: green;
+    margin-top: 10px;
+    display: none;
+}
+
+#feedback {
+    margin-top: 10px;
+}
