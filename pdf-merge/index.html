@@ -18,6 +18,8 @@
             border: 2px dashed #ccc;
             padding: 20px;
             cursor: pointer;
+            width: 300px;
+            text-align: center;
         }
 
         #progress-bar {
@@ -27,16 +29,24 @@
             margin-top: 10px;
             display: none;
         }
+
+        #feedback {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <div id="upload-area">Drag and drop PDF files here or click to select files</div>
+    <input type="text" id="filename-input" placeholder="Enter filename (optional)">
     <div id="progress-bar"></div>
+    <div id="feedback"></div>
     <input type="file" id="file-input" multiple accept="application/pdf" style="display: none;" />
     <script>
         const uploadArea = document.getElementById('upload-area');
         const fileInput = document.getElementById('file-input');
         const progressBar = document.getElementById('progress-bar');
+        const feedback = document.getElementById('feedback');
+        const filenameInput = document.getElementById('filename-input');
 
         uploadArea.addEventListener('click', () => fileInput.click());
         fileInput.addEventListener('change', handleFiles);
@@ -50,12 +60,13 @@
         async function handleFiles() {
             const files = Array.from(fileInput.files);
             if (!files.every(file => file.type === 'application/pdf')) {
-                alert('Please upload only PDF files.');
+                feedback.textContent = 'Please upload only PDF files.';
                 return;
             }
 
             progressBar.style.display = 'block';
             progressBar.style.width = '0%';
+            feedback.textContent = 'Merging...';
 
             try {
                 const mergedPdf = await PDFLib.PDFDocument.create();
@@ -72,12 +83,15 @@
                 }
 
                 const mergedPdfBytes = await mergedPdf.save();
-                download(mergedPdfBytes, "merged.pdf", "application/pdf");
+                const customFilename = filenameInput.value.trim() || 'merged';
+                download(mergedPdfBytes, `${customFilename}.pdf`, "application/pdf");
+                feedback.textContent = 'Merge completed! Downloading...';
             } catch (error) {
-                alert('An error occurred while merging the files.');
+                feedback.textContent = 'An error occurred while merging the files.';
                 console.error(error);
             } finally {
                 progressBar.style.display = 'none';
+                fileInput.value = ''; // Reset file input for next operation
             }
         }
 
