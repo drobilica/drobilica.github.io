@@ -20,6 +20,16 @@ body, html {
     text-align: center;
     text-decoration: none;
     color: black;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.desktop-icon:hover {
+    transform: scale(1.1); /* Makes the icon slightly larger */
+    color: #555; /* Changes the text color */
+}
+
+.desktop-icon img:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); /* Adds a shadow effect to the icon image */
 }
 
 .desktop-icon img {
@@ -31,3 +41,4 @@ body, html {
     display: block;
     margin-top: 5px;
 }
+
