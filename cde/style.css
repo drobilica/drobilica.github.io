@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#desktop {
+    background-color: #d3d3d3; /* or any background */
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.desktop-icon {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.desktop-icon img {
+    width: 50px; /* size of icons */
+    height: 50px;
+}
+
+.desktop-icon span {
+    display: block;
+    margin-top: 5px;
+}
