@@ -2,10 +2,11 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: 'Pixelated', sans-serif; /* Use a pixelated font */
 }
 
 #desktop {
-    background-color: #d3d3d3; /* or any background */
+    background-color: #008080; /* Teal blue background */
     height: 100%;
     display: flex;
     align-items: start;
@@ -13,8 +14,16 @@ body, html {
     flex-wrap: wrap;
     padding: 10px;
 }
-
+#start-menu {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    background-color: #c0c0c0;
+    padding: 5px;
+    border: 2px outset #ffffff;
+}
 .desktop-icon {
+    font-size: 12px;
     display: inline-block;
     margin: 10px;
     text-align: center;
@@ -35,6 +44,7 @@ body, html {
 .desktop-icon img {
     width: 50px; /* size of icons */
     height: 50px;
+    filter: contrast(80%);
 }
 
 .desktop-icon span {
@@ -42,3 +52,25 @@ body, html {
     margin-top: 5px;
 }
 
+#taskbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #c0c0c0;
+    height: 30px;
+    border-top: 2px outset #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#clock {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#start-button {
+    background-color: #c0c0c0;
+    padding: 5px 10px;
+    border: 1px outset #ffffff;
+    cursor: pointer;
+}
