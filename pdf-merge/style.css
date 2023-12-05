@@ -1,28 +1,25 @@
-
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 50px;
 }
-
 #upload-area {
     border: 2px dashed #ccc;
     padding: 20px;
     cursor: pointer;
-    width: 300px;
+    /* width: 300px; */
     text-align: center;
 }
-
-#progress-bar {
-    width: 0%;
-    height: 20px;
-    background-color: green;
-    margin-top: 10px;
-    display: none;
+.ui.segment {
+    max-width: 600px; /* Adjust this width to match the upload area */
+    margin: auto; /* Center align the segments */
 }
 
-#feedback {
+/* Adjustments for the filename input to prevent cropping */
+#filename-input {
+    width: calc(100% - 20px); /* Adjusts the width to fit within the segment */
+}
+
+/* Optional: To ensure consistent spacing between segments */
+.ui.segment + .ui.segment {
     margin-top: 10px;
 }
