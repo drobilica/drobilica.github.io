@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Merge Tool</title>
     <!-- Semantic UI CSS -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="pdf-lib.min.js"></script>
@@ -49,9 +53,15 @@
         </label>
         <div id="feedback" class="ui message"></div>
     </div>
-
+    <div class="ui segment">
+        <label class="ui label">
+            <i class="list icon"></i>
+            File Processing Status:
+        </label>
+        <div id="file-feedback" class="ui list"></div>
+    </div>
     <!-- Semantic UI JavaScript (Optional, for dynamic components) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <script src="pdf-merge.min.js"></script>
+    <script src="pdf-merge.js"></script>
 </body>
 </html>

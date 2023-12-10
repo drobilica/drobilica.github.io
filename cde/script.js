@@ -21,6 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('clock').innerHTML = timeString;
     }
 
-    setInterval(updateClock, 10000);
+    setInterval(updateClock, 20000);
     updateClock(); // Initial call to display clock immediately
 });
