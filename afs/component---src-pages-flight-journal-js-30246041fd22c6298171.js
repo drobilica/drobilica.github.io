@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[518],{41721:function(e,t,a){a.r(t);var s=a(67294),u=a(84854);t.default=()=>((0,s.useEffect)((()=>{(0,u.navigate)("/my-reservations")}),[]),null)}}]);
+//# sourceMappingURL=component---src-pages-flight-journal-js-30246041fd22c6298171.js.map
