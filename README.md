@@ -24,7 +24,7 @@ The website is designed for ease of use:
 I welcome contributions to my personal website. If you have suggestions, bug reports, or contributions, please feel free to open an issue or submit a pull request.
 
 ## Contact
-For any inquiries or further information, please contact me via [LinkedIn]([Your-LinkedIn-Profile-Link](https://www.linkedin.com/in/dusan-stanic/)).
+For any inquiries or further information, please contact me via [LinkedIn](https://www.linkedin.com/in/dusan-stanic/).
 
 ## License
-Content on this site is available under the MIT License unless otherwise noted. See the [LICENSE](LICENSE) file for more details.
+Content on this site is available under the MIT License unless otherwise noted. See the [LICENSE](https://opensource.org/license/mit/) file for more details.
