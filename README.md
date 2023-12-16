@@ -16,8 +16,8 @@ The website is designed for ease of use:
 3. **Project Details**: Each project icon leads to a page with detailed information and links to repositories or live demos.
 
 ## About the Projects
-- **Advanced Flight System**: [[Description or link to this project](https://drobilica.com/afs/en/)]
-- **Merge-PDF**: A web-based tool for merging PDF documents. [[Link to repository or demo](https://drobilica.com/merge-pdf/)]
+- **Advanced Flight System**: [[link to this project](https://drobilica.com/afs/en/)]
+- **Merge-PDF**: A web-based tool for merging PDF documents. [[Link to demo](https://drobilica.com/merge-pdf/)]
 - **Other Projects**
 
 ## Contributing
