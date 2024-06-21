@@ -5,23 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drobilica ShipIt</title>
-  <script type="module" crossorigin src="/trade/assets/index-D5Q-RfUa.js"></script>
-  <link rel="stylesheet" crossorigin href="/trade/assets/index-C3CdvjpX.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script type="module" crossorigin src="/trade/assets/index-DNwmB-yb.js"></script>
 </head>
 
 <body class="bg-gray-900 text-white">
-    <!-- <button id="darkModeToggle" class="p-2 rounded bg-gray-700 text-white">Toggle Dark Mode</button> -->
     <div class="container mx-auto p-8">
         <h1 class="text-4xl text-center mb-6">Drobilica ShipIt</h1>
-        
+
         <div class="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col items-center justify-center">
             <button id="receiveButton" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                 Receive
             </button>
             <div id="qrCodeContainer" class="mt-4"></div>
             <div id="fileTradeBox" class="hidden mt-4">
-                <input type="file" id="fileInput">
-                <!-- File trade boxes will be added here -->
+                <div class="flex space-x-4">
+                    <div class="w-1/2">
+                        <h2 class="text-2xl mb-2">Your Files</h2>
+                        <input type="file" id="fileInput" class="mb-2">
+                        <ul id="yourFilesList" class="list-disc list-inside"></ul>
+                    </div>
+                    <div class="w-1/2">
+                        <h2 class="text-2xl mb-2">Partner's Files</h2>
+                        <ul id="partnerFilesList" class="list-disc list-inside"></ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
