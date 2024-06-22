@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drobilica ShipIt</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <script type="module" crossorigin src="/trade/assets/index-UpBUBvUq.js"></script>
+    <title>Drobilica ShipIt</title> <!-- Assuming Tailwind is compiled to this file -->
+  <script type="module" crossorigin src="/trade/assets/index-D9V1cKcx.js"></script>
+  <link rel="stylesheet" crossorigin href="/trade/assets/index-B7P3y2L5.css">
 </head>
 
 <body class="bg-gray-900 text-white">
@@ -18,12 +18,13 @@
                 Receive
             </button>
             <div id="qrCodeContainer" class="mt-4"></div>
-            <div id="urlContainer" class="mt-4 hidden">
-                <p id="generatedUrl" class="text-white mb-2"></p>
+            <div id="urlContainer" class="mt-4 hidden flex items-center">
+                <p id="generatedUrl" class="text-white mb-2 mr-2"></p>
                 <button id="copyButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Copy URL</button>
             </div>
             <div id="fileTradeBox" class="hidden mt-4">
-                <input type="file" id="fileInput">
+                <label for="fileInput" class="sr-only">Upload File</label>
+                <input type="file" id="fileInput" class="text-gray-800 bg-gray-300 p-2 rounded" title="Upload File">
                 <!-- File trade boxes will be added here -->
             </div>
         </div>
