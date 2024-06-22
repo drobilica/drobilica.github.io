@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drobilica ShipIt</title> <!-- Assuming Tailwind is compiled to this file -->
-  <script type="module" crossorigin src="/trade/assets/index-DBAZheVF.js"></script>
-  <link rel="stylesheet" crossorigin href="/trade/assets/index-B7P3y2L5.css">
+  <script type="module" crossorigin src="/trade/assets/index-CnSFV81M.js"></script>
+  <link rel="stylesheet" crossorigin href="/trade/assets/index-DG-h5x4f.css">
 </head>
 
 <body class="bg-gray-900 text-white">
@@ -22,10 +22,19 @@
                 <p id="generatedUrl" class="text-white mb-2 mr-2"></p>
                 <button id="copyButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Copy URL</button>
             </div>
-            <div id="fileTradeBox" class="hidden mt-4">
-                <label for="fileInput" class="sr-only">Upload File</label>
-                <input type="file" id="fileInput" class="text-gray-800 bg-gray-300 p-2 rounded" title="Upload File">
-                <!-- File trade boxes will be added here -->
+            <div id="fileTradeBox" class="hidden mt-4 w-full">
+                <div class="flex justify-around">
+                    <div class="w-1/2 p-4">
+                        <h2 class="text-xl mb-4">Your Files</h2>
+                        <ul id="yourFilesList" class="bg-gray-700 p-4 rounded"></ul>
+                        <label for="fileInput" class="text-sm text-gray-300 mt-4">Upload File</label>
+                        <input type="file" id="fileInput" class="text-gray-800 bg-gray-300 p-2 rounded" title="Upload File">
+                    </div>
+                    <div class="w-1/2 p-4">
+                        <h2 class="text-xl mb-4">Partner's Files</h2>
+                        <ul id="partnerFilesList" class="bg-gray-700 p-4 rounded"></ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
