@@ -5,31 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drobilica ShipIt</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script type="module" crossorigin src="/trade/assets/index-BF7sR4Ao.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <script type="module" crossorigin src="/trade/assets/index-UpBUBvUq.js"></script>
 </head>
 
 <body class="bg-gray-900 text-white">
     <div class="container mx-auto p-8">
         <h1 class="text-4xl text-center mb-6">Drobilica ShipIt</h1>
-
+        
         <div class="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col items-center justify-center">
             <button id="receiveButton" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                 Receive
             </button>
             <div id="qrCodeContainer" class="mt-4"></div>
+            <div id="urlContainer" class="mt-4 hidden">
+                <p id="generatedUrl" class="text-white mb-2"></p>
+                <button id="copyButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Copy URL</button>
+            </div>
             <div id="fileTradeBox" class="hidden mt-4">
-                <div class="flex space-x-4">
-                    <div class="w-1/2">
-                        <h2 class="text-2xl mb-2">Your Files</h2>
-                        <input type="file" id="fileInput" class="mb-2">
-                        <ul id="yourFilesList" class="list-disc list-inside"></ul>
-                    </div>
-                    <div class="w-1/2">
-                        <h2 class="text-2xl mb-2">Partner's Files</h2>
-                        <ul id="partnerFilesList" class="list-disc list-inside"></ul>
-                    </div>
-                </div>
+                <input type="file" id="fileInput">
+                <!-- File trade boxes will be added here -->
             </div>
         </div>
     </div>
