@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drobilica ShipIt</title> <!-- Assuming Tailwind is compiled to this file -->
-  <script type="module" crossorigin src="/trade/assets/index-CV9N-xdF.js"></script>
-  <link rel="stylesheet" crossorigin href="/trade/assets/index-DG-h5x4f.css">
+  <script type="module" crossorigin src="/trade/assets/index-BEUqd6mr.js"></script>
+  <link rel="stylesheet" crossorigin href="/trade/assets/index-CDnBX1yV.css">
 </head>
 
 <body class="bg-gray-900 text-white">
@@ -18,21 +18,21 @@
                 Receive
             </button>
             <div id="qrCodeContainer" class="mt-4"></div>
-            <div id="urlContainer" class="mt-4 hidden">
-                <p id="generatedUrl" class="text-white mb-2 mr-2"></p>
+            <div id="urlContainer" class="mt-4 hidden flex items-center">
+                <input type="text" id="generatedUrl" class="text-gray-800 bg-gray-300 p-2 rounded w-full mr-2" readonly>
                 <button id="copyButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Copy URL</button>
             </div>
             <div id="fileTradeBox" class="hidden mt-4 w-full">
-                <div class="flex justify-around">
-                    <div class="w-1/2 p-4">
+                <div class="flex flex-col md:flex-row justify-around">
+                    <div class="w-full md:w-1/2 p-4">
                         <h2 class="text-xl mb-4">Your Files</h2>
-                        <ul id="yourFilesList" class="bg-gray-700 p-4 rounded"></ul>
+                        <ul id="yourFilesList" class="bg-gray-700 p-4 rounded max-h-96 overflow-y-auto"></ul>
                         <label for="fileInput" class="text-sm text-gray-300 mt-4 hidden">Upload File</label>
-                        <input type="file" id="fileInput" class="text-gray-800 bg-gray-300 p-2 rounded hidden" title="Upload File">
+                        <input type="file" id="fileInput" class="text-gray-800 bg-gray-300 p-2 rounded hidden" title="Upload File" multiple>
                     </div>
-                    <div class="w-1/2 p-4">
+                    <div class="w-full md:w-1/2 p-4">
                         <h2 class="text-xl mb-4">Partner's Files</h2>
-                        <ul id="partnerFilesList" class="bg-gray-700 p-4 rounded"></ul>
+                        <ul id="partnerFilesList" class="bg-gray-700 p-4 rounded max-h-96 overflow-y-auto"></ul>
                     </div>
                 </div>
             </div>
