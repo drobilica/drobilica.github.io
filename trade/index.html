@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drobilica ShipIt</title>
-  <script type="module" crossorigin src="/trade/assets/index-BAmGsQGn.js"></script>
+    <link href="styles.css" rel="stylesheet">
+  <script type="module" crossorigin src="/trade/assets/index-BEN9lSe4.js"></script>
   <link rel="stylesheet" crossorigin href="/trade/assets/index-IF--Qx5k.css">
 </head>
 <body class="bg-gray-900 text-white">
     <div class="container mx-auto p-8">
         <h1 class="text-4xl text-center mb-6">Drobilica ShipIt</h1>
-        <div class="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col items-center justify-center">
+        <div id="initialView" class="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col items-center justify-center">
             <button id="generateRoomButton" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mb-4">
                 Generate Room
             </button>
@@ -18,18 +19,18 @@
             <button id="joinRoomButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4">
                 Join Room
             </button>
-            <div id="fileTradeBox" class="hidden mt-4 w-full">
-                <div class="flex flex-row justify-around">
-                    <div class="w-1/2 p-4">
-                        <h2 class="text-xl mb-4">Your Files</h2>
-                        <ul id="yourFilesList" class="bg-gray-700 p-4 rounded max-h-96 overflow-y-auto"></ul>
-                        <label for="fileInput" class="text-sm text-gray-300 mt-4">Upload File</label>
-                        <input type="file" id="fileInput" class="text-gray-800 bg-gray-300 p-2 rounded" multiple>
-                    </div>
-                    <div class="w-1/2 p-4">
-                        <h2 class="text-xl mb-4">Partner's Files</h2>
-                        <ul id="partnerFilesList" class="bg-gray-700 p-4 rounded max-h-96 overflow-y-auto"></ul>
-                    </div>
+        </div>
+        <div id="fileTransferView" class="hidden mt-4 w-full">
+            <div class="flex flex-row justify-around">
+                <div class="w-1/2 p-4">
+                    <h2 class="text-xl mb-4">Your Files</h2>
+                    <ul id="yourFilesList" class="bg-gray-700 p-4 rounded max-h-96 overflow-y-auto"></ul>
+                    <label for="fileInput" class="text-sm text-gray-300 mt-4">Upload File</label>
+                    <input type="file" id="fileInput" class="text-gray-800 bg-gray-300 p-2 rounded" multiple>
+                </div>
+                <div class="w-1/2 p-4">
+                    <h2 class="text-xl mb-4">Partner's Files</h2>
+                    <ul id="partnerFilesList" class="bg-gray-700 p-4 rounded max-h-96 overflow-y-auto"></ul>
                 </div>
             </div>
         </div>
