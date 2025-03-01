@@ -1,12 +1,12 @@
 .slideDown{
-	animation-name: slideDown;
 	-webkit-animation-name: slideDown;	
+	animation-name: slideDown;
 
-	animation-duration: 1s;	
 	-webkit-animation-duration: 1s;
+	animation-duration: 1s;	
 
-	animation-timing-function: ease;	
 	-webkit-animation-timing-function: ease;	
+	animation-timing-function: ease;	
 
 	visibility: visible !important;						
 }
@@ -61,14 +61,14 @@ slideUp
 
 
 .slideUp{
-	animation-name: slideUp;
 	-webkit-animation-name: slideUp;	
+	animation-name: slideUp;
 
-	animation-duration: 1s;	
 	-webkit-animation-duration: 1s;
+	animation-duration: 1s;	
 
-	animation-timing-function: ease;	
 	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;	
 
 	visibility: visible !important;			
 }
@@ -123,14 +123,14 @@ slideLeft
 
 
 .slideLeft{
-	animation-name: slideLeft;
 	-webkit-animation-name: slideLeft;	
+	animation-name: slideLeft;
 
-	animation-duration: 1s;	
 	-webkit-animation-duration: 1s;
+	animation-duration: 1s;	
 
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
 
 	visibility: visible !important;	
 }
@@ -185,14 +185,14 @@ slideRight
 
 
 .slideRight{
-	animation-name: slideRight;
 	-webkit-animation-name: slideRight;	
+	animation-name: slideRight;
 
-	animation-duration: 1s;	
 	-webkit-animation-duration: 1s;
+	animation-duration: 1s;	
 
-	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;		
+	animation-timing-function: ease-in-out;	
 
 	visibility: visible !important;	
 }
@@ -247,14 +247,14 @@ slideExpandUp
 
 
 .slideExpandUp{
-	animation-name: slideExpandUp;
 	-webkit-animation-name: slideExpandUp;	
+	animation-name: slideExpandUp;
 
-	animation-duration: 1.6s;	
 	-webkit-animation-duration: 1.6s;
+	animation-duration: 1.6s;	
 
-	animation-timing-function: ease-out;	
 	-webkit-animation-timing-function: ease -out;
+	animation-timing-function: ease-out;	
 
 	visibility: visible !important;	
 }
@@ -327,14 +327,14 @@ expandUp
 
 
 .expandUp{
-	animation-name: expandUp;
 	-webkit-animation-name: expandUp;	
+	animation-name: expandUp;
 
-	animation-duration: 0.7s;	
 	-webkit-animation-duration: 0.7s;
+	animation-duration: 0.7s;	
 
-	animation-timing-function: ease;	
 	-webkit-animation-timing-function: ease;		
+	animation-timing-function: ease;	
 
 	visibility: visible !important;	
 }
