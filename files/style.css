@@ -9,7 +9,6 @@ body {
     color: #555;
     line-height: 1.6em;
     -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -99,8 +98,8 @@ p.copyright {
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  filter: FlipH;
   -ms-filter: "FlipH";
+  filter: FlipH;
 }
 .cloud.pos1{
   right:20px;
