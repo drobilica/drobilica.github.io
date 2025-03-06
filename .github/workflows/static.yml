@@ -35,7 +35,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install dependencies
         run: npm install
@@ -49,14 +49,20 @@ jobs:
           mkdir deploy
           cp -R dist/* deploy/
           
-          # Copy other static project directories into deploy folder.
-          for dir in afs cv geoconvert merge-pdf vanilla cde cyphonfilter trade; do
-            if [ -d "$dir" ]; then
+          # Copy all top-level directories that are not related to the portfolio site.
+          # Exclude directories that belong to the portfolio: dist, public, src, node_modules, .git, .github
+          for dir in $(find . -maxdepth 1 -type d \
+            -not -name '.' \
+            -not -name 'dist' \
+            -not -name 'public' \
+            -not -name 'src' \
+            -not -name 'node_modules' \
+            -not -name '.git' \
+            -not -name '.github'); do
               cp -R "$dir" deploy/
-            fi
           done
           
-          # Copy additional static files (like CNAME or favicon.ico) if they exist.
+          # Copy additional static files if they exist.
           [ -f CNAME ] && cp CNAME deploy/ || true
           [ -f favicon.ico ] && cp favicon.ico deploy/ || true
 
