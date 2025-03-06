@@ -50,7 +50,7 @@ jobs:
           cp -R dist/* deploy/
           
           # Copy all top-level directories that are not related to the portfolio site.
-          # Exclude directories that belong to the portfolio: dist, public, src, node_modules, .git, .github
+          # Exclude directories that belong to the portfolio: dist, public, src, node_modules, .git, .github, and deploy itself.
           for dir in $(find . -maxdepth 1 -type d \
             -not -name '.' \
             -not -name 'dist' \
@@ -58,7 +58,8 @@ jobs:
             -not -name 'src' \
             -not -name 'node_modules' \
             -not -name '.git' \
-            -not -name '.github'); do
+            -not -name '.github' \
+            -not -name 'deploy'); do
               cp -R "$dir" deploy/
           done
           
