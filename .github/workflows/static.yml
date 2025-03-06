@@ -31,13 +31,48 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build portfolio site with Vite
+        run: npm run build
+
+      - name: Prepare deployment directory
+        run: |
+          # Create a deploy folder and copy Vite's build output into it.
+          mkdir deploy
+          cp -R dist/* deploy/
+          
+          # Copy other static project directories into deploy folder.
+          for dir in afs cv geoconvert merge-pdf vanilla cde cyphonfilter trade; do
+            if [ -d "$dir" ]; then
+              cp -R "$dir" deploy/
+            fi
+          done
+          
+          # Copy additional static files (like CNAME or favicon.ico) if they exist.
+          [ -f CNAME ] && cp CNAME deploy/ || true
+          [ -f favicon.ico ] && cp favicon.ico deploy/ || true
+
+      - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: 'deploy'
+
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v5
+
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     # Upload entire repository
+      #     path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
