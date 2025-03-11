@@ -46,26 +46,12 @@ jobs:
       - name: Prepare deployment directory
         run: |
           # Create a deploy folder and copy Vite's build output into it.
-          mkdir deploy
-          cp -R dist/* deploy/
-          
-          # Copy all top-level directories that are not related to the portfolio site.
-          # Exclude directories that belong to the portfolio: dist, public, src, node_modules, .git, .github, and deploy itself.
-          for dir in $(find . -maxdepth 1 -type d \
-            -not -name '.' \
-            -not -name 'dist' \
-            -not -name 'public' \
-            -not -name 'src' \
-            -not -name 'node_modules' \
-            -not -name '.git' \
-            -not -name '.github' \
-            -not -name 'deploy'); do
-              cp -R "$dir" deploy/
-          done
-          
+          mkdir sites
+          cp -R dist/* sites/
+         
           # Copy additional static files if they exist.
-          [ -f CNAME ] && cp CNAME deploy/ || true
-          [ -f favicon.ico ] && cp favicon.ico deploy/ || true
+          [ -f CNAME ] && cp CNAME sites/ || true
+          [ -f favicon.ico ] && cp favicon.ico sites/ || true
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
