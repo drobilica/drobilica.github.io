@@ -46,8 +46,9 @@ jobs:
       - name: Prepare deployment directory
         run: |
           # Create a deploy folder and copy Vite's build output into it.
-          mkdir sites
-          cp -R dist/* sites/
+          mkdir deploy/
+          cp -R dist/* deploy/ 
+          cp -R sites/* deploy/
          
           # Copy additional static files if they exist.
           [ -f CNAME ] && cp CNAME sites/ || true
