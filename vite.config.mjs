@@ -13,14 +13,6 @@ export default {
         'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
       }
     },
-    content: [
-      '!./sites',
-      '!./**/node_modules',
-      "./sites/**/*.{html,js}",
-      "!./sites/**/node_modules/**/*.{html,js}" // <- Add
 
-
-
-    ],
 }
 
