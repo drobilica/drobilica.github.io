@@ -49,7 +49,7 @@ jobs:
           mkdir deploy/
           cp -R dist/* deploy/ 
           cp -R sites/* deploy/
-         
+
           # Copy additional static files if they exist.
           [ -f CNAME ] && cp CNAME sites/ || true
           [ -f favicon.ico ] && cp favicon.ico sites/ || true
