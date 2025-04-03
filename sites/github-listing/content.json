@@ -1,0 +1,45 @@
+[
+    {
+      "title": "Dusan Stanic CV",
+      "description": "My CV",
+      "github": "https://github.com/drobilica/drobilica.github.io",
+      "url": "https://drobilica.com/cv"
+    },
+    {
+      "title": "Merge PDF",
+      "description": "Merge PDFs client side",
+      "github": "https://github.com/drobilica/merge-pdf",
+      "url": "https://drobilica.com/merge-pdf/"
+    },
+    {
+      "title": "Cyphon Filter",
+      "description": "Devops client side toolset",
+      "github": "https://github.com/drobilica/cyphonfilter",
+      "url": "https://drobilica.com/cyphonfilter/"
+    },
+    {
+      "title": "Geo Convert",
+      "description": "Convert UTM to Google maps",
+      "github": "https://github.com/drobilica/geoconvert",
+      "url": "https://drobilica.com/geoconvert/"
+    },
+    {
+      "title": "CDE",
+      "description": "Desktop environment like W95",
+      "github": "https://github.com/drobilica/drobilica.github.io/tree/main/cde",
+      "url": "https://drobilica.com/cde/"
+    },
+    {
+      "title": "Vanilla Vite+JS template",
+      "description": "Template for projects",
+      "github": "https://github.com/drobilica/vanillaViteJS",
+      "url": "https://drobilica.com/vanilla/"
+    },
+    {
+      "title": "Web Commander",
+      "description": "File transfer service that is using webRTC",
+      "github": "https://github.com/drobilica/webcommander",
+      "url": "https://drobilica.com/trade/"
+    }
+  ]
+  
