@@ -1,14 +1,44 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="module" crossorigin src="/vanillavitejs/assets/index-8huVsohh.js"></script>
-  <link rel="stylesheet" crossorigin href="/vanillavitejs/assets/index-ChyI869y.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebCommander</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css" />
+  <style>
+    body { display: flex; flex-direction: column; height: 100vh; margin: 0; }
+    header { display: flex; align-items: center; gap: 1rem; padding: 0.5rem; }
+    main { flex: 1; display: flex; }
+    #localPane, #remotePane { flex: 1; padding: 1rem; border: 1px solid #ccc; margin: 0.5rem; overflow-y: auto; }
+    #statusBar { padding: 0.5rem; background: #efefef; border-top: 1px solid #ccc; display: flex; gap: 2rem; font-size: 0.9rem; }
+    #debug { height: 150px; overflow-y: auto; padding: 0.5rem; background: #f9f9f9; border-top: 1px solid #ccc; font-size: 0.85rem; }
+  </style>
+  <script type="module" crossorigin src="/vanillavitejs/assets/index-JFDkXuFJ.js"></script>
 </head>
-<body class="bg-cyan-700">
-  <h1 class="text-5xl font-bold underline">
-    Hello world!
-  </h1>
+<body>
+  <header>
+    <span>Room:</span><span id="currentRoom">—</span>
+    <input type="text" id="roomInput" placeholder="Enter room ID" />
+    <button id="joinBtn">Join</button>
+  </header>
+  <main>
+    <section id="localPane">
+      <h2>Local</h2>
+      <input type="file" id="fileInput" multiple />
+      <div id="localFiles"></div>
+    </section>
+    <section id="remotePane">
+      <h2>Remote</h2>
+      <div id="remoteFiles"></div>
+    </section>
+  </main>
+  <div id="statusBar">
+    <span id="status-signaling">Signaling: <strong>❌</strong></span>
+    <span id="status-peer">Peer: <strong>❌</strong></span>
+    <span id="status-data">DataChannel: <strong>❌</strong></span>
+  </div>
+  <div id="debug"></div>
+
 </body>
 </html>
