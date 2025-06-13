@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File Trader</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"
+  />
+  <script type="module" crossorigin src="/vanillavitejs/assets/index-Cdngkbe8.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>File Trader</h1>
+      <form id="room-form">
+        <label for="room-input">Room:</label>
+        <input
+          type="text"
+          id="room-input"
+          placeholder="Enter room #"
+          required
+        />
+        <button type="submit">Join</button>
+      </form>
+    </header>
+    <section class="grid">
+      <div id="local-pane" class="card">
+        <h2>Your Files</h2>
+        <input type="file" id="file-input" multiple />
+        <ul id="file-list"></ul>
+      </div>
+      <div id="remote-pane" class="card">
+        <h2>Peer Files</h2>
+        <ul id="peer-list"></ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

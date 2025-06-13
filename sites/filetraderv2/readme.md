@@ -1,0 +1,1 @@
+## place static files like .png .svg here
