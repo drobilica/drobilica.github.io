@@ -40,6 +40,12 @@
       "description": "File transfer service that is using webRTC",
       "github": "https://github.com/drobilica/webcommander",
       "url": "https://drobilica.com/trade/"
+    },
+    {
+      "title": "Kupujem Prodajem Alati",
+      "description": "Removes renewed ads from kupujemprodajem.com searches",
+      "github": "https://github.com/drobilica/kupujemprodajem-alati",
+      "url": "https://microsoftedge.microsoft.com/addons/detail/kupujem-prodajem-alati/beejiohficdebgifogfeejjjcgclacgg"
     }
   ]
   
