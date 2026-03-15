@@ -1,37 +1,39 @@
-# Merge-PDF: A Web-Based PDF Merging Tool
+# Merge PDF
 
-## Overview
-Merge-PDF is a simple, intuitive web application designed to merge multiple PDF files into a single document. Utilizing a drag-and-drop interface and a clean, user-friendly design, it's never been easier to combine your PDFs.
+## What is this app?
 
-### Features
-- **Drag and Drop Interface**: Easily add your PDF files by dragging and dropping them into the upload area.
-- **Multiple File Support**: Merge several PDFs at once for quick, efficient processing.
-- **Progress Indicators**: Stay informed with a progress bar and file-specific status updates.
-- **Custom Output Filename**: Choose your desired filename for the merged PDF.
-- **Error Handling**: Get instant feedback on the processing status with clear error messages if something goes wrong.
+Merge PDF is a static browser app that merges multiple PDF files into one document entirely on the client side.
 
-## How to Use Merge-PDF
+## Who is it for?
 
-1. **Upload PDF Files**: Click on the upload area or drag and drop your PDF files into it.
-2. **Set Output Filename** (Optional): Enter a custom filename for your merged PDF. If you leave this blank, a default name will be used.
-3. **Merge and Download**: Once your files are uploaded, the tool will automatically start merging them. After the process completes, your merged PDF will be downloaded automatically.
+It is for users who need a quick PDF merge tool without uploading files to a server.
 
-## Under the Hood
+## What problem does it solve?
 
-Merge-PDF leverages several technologies to provide a seamless user experience:
+It provides a privacy-friendly, zero-backend way to combine PDF files in the browser.
 
-- **Semantic UI**: For a modern, responsive interface.
-- **jQuery**: To enhance HTML document traversing, event handling, and animation.
-- **PDF-Lib**: A powerful JavaScript library for creating, modifying, and merging PDF files.
+## How do I run it locally?
 
-## Browser Compatibility
+This app does not use Vite.
 
-Merge-PDF is compatible with most modern web browsers. For the best experience, we recommend using the latest version of Google Chrome, Mozilla Firefox, or Microsoft Edge.
+1. `cd merge-pdf`
+2. Serve the directory with any static file server, for example `python3 -m http.server 4173`
+3. Open `http://localhost:4173`
 
-## Contributions
+The main runtime lives in `index.html`, `libs/pdf-merge.js`, and `styles/style.css`.
 
-Contributions to Merge-PDF are welcome! If you have a suggestion or improvement, feel free to fork this repository and submit a pull request.
+## How do I build and deploy it?
 
-## License
+There is no build step. CI copies the entire directory as a static site into `sites/merge-pdf/`.
 
-Merge-PDF is open source and distributed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+If you make changes, verify them by serving the folder locally. Deployment happens by pushing to `main`, after which the downstream site repo receives the copied files.
+
+## What makes this app different from the others in the repo?
+
+It is the only app here that is intentionally plain static HTML, CSS, and browser scripts without Vite or a package manifest.
+
+## What is unfinished or intentionally out of scope?
+
+- There is no PDF splitting, compression, signing, or reordering UI beyond the current merge flow.
+- Third-party libraries are vendored directly in `libs/`.
+- There are no tests or package-managed dependencies.
