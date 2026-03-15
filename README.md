@@ -1,30 +1,51 @@
-# Personal Website Repository
+# drobilica.github.io
 
-## Overview
-Welcome to my personal website hosted on GitHub Pages. This site serves as a central hub for my professional and personal projects, including my CV, a Classic Desktop Environment (CDE) clone, and various other projects I've developed in my spare time.
+This repository is the public website for `drobilica.com`. It has two responsibilities:
 
-### Features
-- **Professional CV**: Access my latest professional curriculum vitae.
-- **CDE Clone**: A unique, interactive clone of the Classic Desktop Environment, featuring icons that link to my various projects.
-- **Project Showcase**: Explore projects like 'Advanced Flight System', 'Merge-PDF', and others.
-- **Direct Links to Professional Profiles**: Quick access to my LinkedIn and other professional profiles.
+- the root Vite app that serves the main homepage at `https://drobilica.com/`
+- the `sites/` directory that stores deployable artifacts copied from other source repositories, especially `flight-deck-monorepo`
 
-## Navigating the Website
-The website is designed for ease of use:
-1. **CDE Clone**: Click on desktop icons to navigate to different projects or sections of the website.
-2. **Professional Links**: Access my LinkedIn and other professional profiles directly from the desktop.
-3. **Project Details**: Each project icon leads to a page with detailed information and links to repositories or live demos.
+## Repository role
 
-## About the Projects
-- **Advanced Flight System**: [[link to this project](https://drobilica.com/afs/en/)]
-- **Merge-PDF**: A web-based tool for merging PDF documents. [[Link to demo](https://drobilica.com/merge-pdf/)]
-- **Other Projects**
+This is a hybrid source and deployment repository:
 
-## Contributing
-I welcome contributions to my personal website. If you have suggestions, bug reports, or contributions, please feel free to open an issue or submit a pull request.
+- root-level files such as `index.html`, `src/`, `package.json`, and `vite.config.mjs` are the source for the main public homepage
+- `sites/` is an artifact area containing static apps that are built elsewhere and published under subpaths like `/cv/`, `/cyphonfilter/`, and `/github-listing/`
 
-## Contact
-For any inquiries or further information, please contact me via [LinkedIn](https://www.linkedin.com/in/dusan-stanic/).
+The source of truth for many apps under `sites/` is not this repository. For example, `flight-deck-monorepo` builds and pushes site artifacts here.
 
-## License
-Content on this site is available under the MIT License unless otherwise noted. See the [LICENSE](https://opensource.org/license/mit/) file for more details.
+## Local development
+
+1. `pnpm install`
+2. `pnpm dev`
+
+This runs the root public homepage locally. It does not rebuild the apps under `sites/`.
+
+## Build and deploy
+
+- Local production build: `pnpm build`
+- GitHub Pages deploy: handled by `.github/workflows/static.yml`
+
+The deploy workflow:
+
+- builds the root Vite site into `dist/`
+- copies `dist/` into a temporary deploy directory
+- copies `sites/` into that same deploy directory
+- publishes the combined output to GitHub Pages
+
+## Editing rules
+
+- Edit root site source here when you want to change `drobilica.com` itself.
+- Do not manually edit `sites/` unless you intentionally want to patch deployed artifacts in place. In normal workflow, update the upstream source repo instead.
+- If an app under `sites/` looks wrong, first check whether its source lives in `flight-deck-monorepo` or another repo.
+
+## Structure
+
+- `index.html`: root homepage entrypoint
+- `src/`: root homepage CSS and JS
+- `sites/`: deployed static app artifacts served under subpaths
+- `.github/workflows/static.yml`: GitHub Pages deployment workflow
+
+## Why this setup exists
+
+GitHub Pages is easiest to manage from a single publishable repository. Keeping the public root site and the app artifacts together allows `drobilica.com` and all subpath apps to deploy as one site while still letting the source code for those apps live elsewhere.
