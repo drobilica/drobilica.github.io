@@ -33,7 +33,7 @@ jobs:
           mkdir -p deploy/
           for entry in *; do
             case "$entry" in
-              AGENTS.md|README.md|node_modules|sites)
+              AGENTS.md|README.md|deploy|node_modules|sites)
                 continue
                 ;;
             esac
