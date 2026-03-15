@@ -11,7 +11,7 @@ Do not assume every file here is primary source code. Much of `sites/` is genera
 
 ## What should an agent avoid changing?
 
-- Do not casually edit files inside `sites/`; most of them are deployed artifacts copied from upstream repos.
+- Do not casually edit files inside `sites/`; it is generated artifact output copied from upstream repos.
 - Do not rename or remove `sites/` subdirectories unless the user explicitly asks.
 - Do not change GitHub Pages workflow behavior without understanding how artifact repos publish into this repo.
 - Do not change `CNAME` unless the user explicitly asks.
@@ -28,6 +28,7 @@ Do not assume every file here is primary source code. Much of `sites/` is genera
 - The root homepage is served from `/`
 - Apps under `sites/` are served from subpaths like `/cv/` and `/cyphonfilter/`
 - `.github/workflows/static.yml` builds the root site, then overlays `sites/` into the final Pages artifact
+- `sites/` is fully owned by automated deployment, so workflows may replace its contents wholesale
 
 ## Which files are the main entrypoints?
 
@@ -49,4 +50,4 @@ Do not assume every file here is primary source code. Much of `sites/` is genera
 
 - `sites/` is intentionally a mixed artifact area, not a clean source tree
 - Root source and deployed artifacts live in the same repository
-- It is easy to accidentally edit generated output instead of the real upstream source
+- The main failure mode is forgetting that `sites/` is generated output and not manual source

@@ -36,7 +36,9 @@ The deploy workflow:
 ## Editing rules
 
 - Edit root site source here when you want to change `drobilica.com` itself.
-- Do not manually edit `sites/` unless you intentionally want to patch deployed artifacts in place. In normal workflow, update the upstream source repo instead.
+- `sites/` is generated artifact space, not a manual editing area.
+- Never treat `sites/` as hand-maintained content. Upstream source repos are the source of truth.
+- It is acceptable for deployment workflows to replace the contents of `sites/` wholesale.
 - If an app under `sites/` looks wrong, first check whether its source lives in `flight-deck-monorepo` or another repo.
 
 ## Structure

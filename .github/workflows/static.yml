@@ -5,6 +5,9 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+env:
+  NODE_VERSION: 22
+
 permissions:
   contents: read
   pages: write
@@ -24,14 +27,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '24'
+          node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
+          cache-dependency-path: 'pnpm-lock.yaml'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -42,9 +49,9 @@ jobs:
       - name: Prepare deployment directory
         run: |
           # Create a deploy folder and copy Vite's build output into it.
-          mkdir deploy/
-          cp -R dist/* deploy/ 
-          cp -R sites/* deploy/
+          mkdir -p deploy/
+          cp -R dist/. deploy/
+          cp -R sites/. deploy/
           ls -l deploy/
           # Copy additional static files if they exist.
           [ -f CNAME ] && cp CNAME deploy/ || true
