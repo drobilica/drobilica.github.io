@@ -29,13 +29,22 @@ jobs:
 
       - name: Prepare deployment directory
         run: |
+          set -euo pipefail
           mkdir -p deploy/
-          [ -f index.html ] && cp index.html deploy/ || true
-          [ -d assets ] && cp -R assets deploy/ || true
+          for entry in *; do
+            case "$entry" in
+              AGENTS.md|README.md|node_modules|sites)
+                continue
+                ;;
+            esac
+
+            if [ -e "$entry" ]; then
+              cp -R "$entry" deploy/
+            fi
+          done
+
           cp -R sites/. deploy/
           ls -l deploy/
-          [ -f CNAME ] && cp CNAME deploy/ || true
-          [ -f favicon.ico ] && cp favicon.ico deploy/ || true
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v4
