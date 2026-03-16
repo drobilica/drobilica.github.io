@@ -24,6 +24,12 @@
       "url": "https://drobilica.com/geoconvert/"
     },
     {
+      "title": "Games Collection",
+      "description": "Small browser game experiments, currently Retro Pong",
+      "github": "https://github.com/drobilica/drobilica.github.io/tree/main/games-collection",
+      "url": "https://drobilica.com/games-collection/"
+    },
+    {
       "title": "CDE",
       "description": "Desktop environment like W95",
       "github": "https://github.com/drobilica/drobilica.github.io/tree/main/cde",
@@ -33,13 +39,19 @@
       "title": "Vanilla Vite+JS template",
       "description": "Template for projects",
       "github": "https://github.com/drobilica/vanillaViteJS",
-      "url": "https://drobilica.com/vanilla/"
+      "url": "https://drobilica.com/vanillavitejs/"
     },
     {
       "title": "Web Commander",
       "description": "File transfer service that is using webRTC",
       "github": "https://github.com/drobilica/webcommander",
-      "url": "https://drobilica.com/trade/"
+      "url": "https://drobilica.com/filetrader/"
+    },
+    {
+      "title": "GitHub Listing",
+      "description": "Directory of published apps and projects",
+      "github": "https://github.com/drobilica/drobilica.github.io/tree/main/github-listing",
+      "url": "https://drobilica.com/github-listing/"
     },
     {
       "title": "Kupujem Prodajem Alati",
