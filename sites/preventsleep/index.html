@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PreventSleep keeps your desktop awake while this tab is open and tracks awake time.">
+    <meta name="theme-color" content="#080b12">
+    <title>PreventSleep</title>
+    <script type="module" crossorigin src="/preventsleep/assets/index-6X9Sp9Ai.js"></script>
+    <link rel="stylesheet" crossorigin href="/preventsleep/assets/index-D_UofuY3.css">
+  </head>
+  <body>
+    <main class="shell" aria-live="polite">
+      <div class="status-dot" id="status-dot" aria-hidden="true"></div>
+      <p class="status-label" id="status-label">Initializing wake lock...</p>
+      <h1>PreventSleep</h1>
+      <p class="subtitle">This page is actively keeping your computer awake.</p>
+      <p class="timer-label">Awake for</p>
+      <output class="timer" id="timer" aria-label="Awake duration">00:00:00</output>
+      <p class="note" id="compat-note">Wake Lock API status pending.</p>
+      <button type="button" class="action" id="retry-button" hidden>Retry wake lock</button>
+    </main>
+
+  </body>
+</html>

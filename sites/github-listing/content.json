@@ -54,6 +54,12 @@
       "url": "https://drobilica.com/github-listing/"
     },
     {
+      "title": "PreventSleep",
+      "description": "Dark keep-awake utility with stopwatch and browser wake lock support",
+      "github": "https://github.com/drobilica/drobilica.github.io/tree/main/preventsleep",
+      "url": "https://preventsleep.com/"
+    },
+    {
       "title": "Kupujem Prodajem Alati",
       "description": "Removes renewed ads from kupujemprodajem.com searches",
       "github": "https://github.com/drobilica/kupujemprodajem-alati",
