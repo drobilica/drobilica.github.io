@@ -13,21 +13,20 @@ Do not assume every file here is primary source code. The homepage and much of `
 
 - Do not casually edit files inside `sites/`; it is generated artifact output copied from upstream repos.
 - Do not rename or remove `sites/` subdirectories unless the user explicitly asks.
-- Do not change GitHub Pages workflow behavior without understanding how artifact repos publish into this repo.
+- Do not change GitHub Pages workflow behavior without understanding how this repository is published.
 - Do not change `CNAME` unless the user explicitly asks.
 
 ## What stack and conventions are mandatory here?
 
 - This repo is primarily artifact storage plus GitHub Pages deployment glue
 - `sites/` contents may use different stacks because they are built elsewhere
-- The root homepage artifact currently comes from `flight-deck-monorepo/drobilica-com-landing-page`
 
 ## What deployment/base-path assumptions exist?
 
 - The root homepage is served from `/`
 - Apps under `sites/` are served from subpaths like `/cv/` and `/cyphonfilter/`
 - `.github/workflows/static.yml` packages the current published root files and overlays `sites/` into the final Pages artifact
-- `sites/` is fully owned by automated deployment, so workflows may replace its contents wholesale
+- automated publishing may replace `sites/` contents wholesale
 
 ## Which files are the main entrypoints?
 
