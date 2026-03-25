@@ -25,9 +25,9 @@
   },
   {
     "title": "Games Collection",
-    "description": "Small browser game experiments, currently Retro Pong",
-    "github": "https://github.com/drobilica/drobilica.github.io/tree/main/games-collection",
-    "url": "https://drobilica.com/games-collection/"
+    "description": "Browseable games hub with Pong JS as the current playable title",
+    "github": "https://github.com/drobilica/games-collection",
+    "url": "https://games.drobilica.com/"
   },
   {
     "title": "CDE",
