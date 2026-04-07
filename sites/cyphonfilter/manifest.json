@@ -1,0 +1,16 @@
+{
+  "name": "CyphonFilter",
+  "short_name": "CyphonFilter",
+  "description": "Browser-based crypto utility suite — password generator, key generator, Base64, encryption, hashing, and more.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#1c1c1c",
+  "theme_color": "#e8a045",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
