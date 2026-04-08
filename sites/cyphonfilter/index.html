@@ -10,8 +10,8 @@
     <title>CyphonFilter</title>
     <link rel="icon" type="image/svg+xml" href="/cyphonfilter/favicon.svg" />
     <link rel="manifest" href="/cyphonfilter/manifest.json" />
-    <script type="module" crossorigin src="/cyphonfilter/assets/index-CLJ8bNGY.js"></script>
-    <link rel="stylesheet" crossorigin href="/cyphonfilter/assets/index-Bi7OMwOW.css">
+    <script type="module" crossorigin src="/cyphonfilter/assets/index-C-2I_LG2.js"></script>
+    <link rel="stylesheet" crossorigin href="/cyphonfilter/assets/index-DulKt6c9.css">
   </head>
   <body>
     <!-- Sidebar -->
@@ -46,9 +46,7 @@
               </button>
             </li>
             <li>
-              <button data-target="hash" class="tab-button">
-                Hash Generator
-              </button>
+              <button data-target="hash" class="tab-button">Hash Tools</button>
             </li>
             <li>
               <button data-target="uuid" class="tab-button">
@@ -210,6 +208,7 @@
             </div>
             <span id="strength-label" class="strength-label"></span>
           </div>
+          <ul id="strength-suggestions" class="strength-suggestions"></ul>
         </div>
       </div>
 
@@ -335,10 +334,17 @@
         </form>
       </div>
 
-      <!-- Hash Generator -->
+      <!-- Hash Tools -->
       <div id="hash" class="tab-content hidden">
-        <h2 class="page-title">Hash Generator</h2>
-        <form id="hash-form" class="form-stack">
+        <h2 class="page-title">Hash Tools</h2>
+
+        <div class="segment-control">
+          <button id="hash-mode-text" class="segment active">Text</button>
+          <button id="hash-mode-file" class="segment">File</button>
+        </div>
+
+        <!-- Text Hash -->
+        <form id="hash-text-panel" class="form-stack">
           <div class="form-group">
             <label for="hash-input">Input Text</label>
             <textarea id="hash-input" class="textarea" rows="4"></textarea>
@@ -346,7 +352,9 @@
           <div class="form-group">
             <label for="hash-algorithm">Algorithm</label>
             <select id="hash-algorithm" class="select">
-              <option value="SHA-256">SHA-256</option>
+              <option value="MD5">MD5</option>
+              <option value="SHA-1">SHA-1</option>
+              <option value="SHA-256" selected>SHA-256</option>
               <option value="SHA-384">SHA-384</option>
               <option value="SHA-512">SHA-512</option>
             </select>
@@ -359,10 +367,76 @@
             Generate Hash
           </button>
         </form>
+
+        <!-- File Checksum -->
+        <div id="hash-file-panel" class="form-stack hidden">
+          <div id="drop-zone" class="drop-zone">
+            <span class="drop-zone-icon">📁</span>
+            <span class="drop-zone-label"
+              >Drop file here or click to browse</span
+            >
+            <span id="drop-zone-file" class="drop-zone-file"></span>
+            <input type="file" id="file-input" class="drop-zone-input" />
+          </div>
+          <span id="file-size-warning" class="warning-message hidden">
+            ⚠️ File exceeds 2 GB — may cause high memory usage.
+          </span>
+          <div class="form-group">
+            <label for="file-algorithm">Algorithm</label>
+            <select id="file-algorithm" class="select">
+              <option value="MD5">MD5</option>
+              <option value="SHA-1">SHA-1</option>
+              <option value="SHA-256" selected>SHA-256</option>
+              <option value="SHA-384">SHA-384</option>
+              <option value="SHA-512">SHA-512</option>
+            </select>
+          </div>
+          <button
+            id="file-hash-button"
+            type="button"
+            class="btn btn-accent btn-full"
+          >
+            Calculate Checksum
+          </button>
+          <div id="file-progress" class="progress-bar hidden">
+            <div id="file-progress-fill" class="progress-fill"></div>
+            <span id="file-progress-text" class="progress-text">0%</span>
+          </div>
+          <div class="form-group">
+            <label for="verify-hash-input">Expected hash</label>
+            <div class="form-row">
+              <input
+                type="text"
+                id="verify-hash-input"
+                class="input mono-input"
+                placeholder="Paste or drop a .sha256 file"
+              />
+              <label
+                class="btn btn-secondary drop-file-btn"
+                title="Load .sha256 / .asc file"
+              >
+                Load
+                <input
+                  type="file"
+                  id="checksum-file-input"
+                  class="drop-zone-input"
+                  accept=".sha256,.sha512,.md5,.asc,.sig"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shared result -->
         <div id="hash-result" class="result-section hidden">
-          <h3 class="section-title">Hash Output</h3>
           <pre id="hash-output" class="output-pre"></pre>
-          <button id="copy-hash" class="btn btn-secondary">Copy</button>
+          <div id="verify-result" class="verify-result hidden">
+            <span id="verify-icon" class="verify-icon"></span>
+            <span id="verify-text" class="verify-text"></span>
+          </div>
+          <div class="btn-row">
+            <button id="copy-hash" class="btn btn-secondary">Copy</button>
+          </div>
         </div>
       </div>
 
@@ -393,7 +467,9 @@
         <div id="uuid-result" class="result-section hidden">
           <h3 class="section-title">Generated UUIDs</h3>
           <pre id="uuid-output" class="output-pre"></pre>
-          <button id="copy-uuids" class="btn btn-secondary">Copy All</button>
+          <div class="btn-row">
+            <button id="copy-uuids" class="btn btn-secondary">Copy All</button>
+          </div>
         </div>
       </div>
 
@@ -418,14 +494,18 @@
         <div id="jwt-result" class="result-section hidden">
           <h3 class="section-title">Header</h3>
           <pre id="jwt-header" class="output-pre"></pre>
-          <button id="copy-jwt-header" class="btn btn-secondary">
-            Copy Header
-          </button>
+          <div class="btn-row">
+            <button id="copy-jwt-header" class="btn btn-secondary">
+              Copy Header
+            </button>
+          </div>
           <h3 class="section-title mt-md">Payload</h3>
           <pre id="jwt-payload" class="output-pre"></pre>
-          <button id="copy-jwt-payload" class="btn btn-secondary">
-            Copy Payload
-          </button>
+          <div class="btn-row">
+            <button id="copy-jwt-payload" class="btn btn-secondary">
+              Copy Payload
+            </button>
+          </div>
         </div>
       </div>
     </main>
