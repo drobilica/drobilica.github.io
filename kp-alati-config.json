@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "selectors": {
+    "adSection": "section[class*=\"AdItem_adOuterHolder\"]",
+    "postedStatusSvg": "[class*=\"AdItem_postedStatus\"] svg",
+    "targetElement": "ul[class*=\"SearchTagContainer_tagList\"]",
+    "promoted": "section[class*=\"CategoryPartner_categoryPartnerHolder\"]"
+  }
+}
