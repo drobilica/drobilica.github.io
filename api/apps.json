@@ -142,5 +142,33 @@
     "type": "external",
     "featured": false,
     "external": true
+  },
+  {
+    "id": "trade",
+    "name": "Trade",
+    "description": "File transfer and trading-oriented experiment",
+    "url": "https://drobilica.com/trade/",
+    "github": null,
+    "tags": ["experiment"],
+    "stack": "Browser app",
+    "status": "experimental",
+    "type": "internal",
+    "featured": false,
+    "external": false,
+    "hidden": true
+  },
+  {
+    "id": "filetrader",
+    "name": "Web Commander",
+    "description": "File transfer service using WebRTC for peer-to-peer exchange",
+    "url": "https://drobilica.com/filetrader/",
+    "github": "https://github.com/drobilica/webcommander",
+    "tags": ["webrtc", "p2p"],
+    "stack": "Vite, WebRTC",
+    "status": "experimental",
+    "type": "internal",
+    "featured": false,
+    "external": false,
+    "hidden": true
   }
 ]
