@@ -105,20 +105,6 @@
     "hidden": true
   },
   {
-    "id": "filetrader",
-    "name": "Web Commander",
-    "description": "File transfer service using WebRTC for peer-to-peer exchange",
-    "url": "https://drobilica.com/filetrader/",
-    "github": "https://github.com/drobilica/webcommander",
-    "tags": ["webrtc", "p2p"],
-    "stack": "Vite, WebRTC",
-    "status": "experimental",
-    "type": "internal",
-    "featured": false,
-    "external": false,
-    "hidden": true
-  },
-  {
     "id": "github-listing",
     "name": "GitHub Listing",
     "description": "Directory of published apps and projects",
@@ -158,19 +144,6 @@
     "external": true
   },
   {
-    "id": "afs",
-    "name": "Advanced Flight System",
-    "description": "Experimental flight-related project",
-    "url": "https://drobilica.com/afs/",
-    "github": null,
-    "tags": ["prototype"],
-    "stack": "Prototype",
-    "status": "experimental",
-    "type": "internal",
-    "featured": false,
-    "external": false
-  },
-  {
     "id": "trade",
     "name": "Trade",
     "description": "File transfer and trading-oriented experiment",
@@ -178,6 +151,20 @@
     "github": null,
     "tags": ["experiment"],
     "stack": "Browser app",
+    "status": "experimental",
+    "type": "internal",
+    "featured": false,
+    "external": false,
+    "hidden": true
+  },
+  {
+    "id": "filetrader",
+    "name": "Web Commander",
+    "description": "File transfer service using WebRTC for peer-to-peer exchange",
+    "url": "https://drobilica.com/filetrader/",
+    "github": "https://github.com/drobilica/webcommander",
+    "tags": ["webrtc", "p2p"],
+    "stack": "Vite, WebRTC",
     "status": "experimental",
     "type": "internal",
     "featured": false,
