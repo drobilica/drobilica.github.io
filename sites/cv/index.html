@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" crossorigin href="/cv/assets/index-CM8vExgo.css">
+    <link rel="stylesheet" crossorigin href="/cv/assets/index-D37t6QuY.css">
   </head>
   <body>
     <div id="cv">
@@ -23,76 +23,66 @@
 <p>📍 Belgrade, Serbia · 🌐 <a href="https://drobilica.com">drobilica.com</a> · 💻 <a href="https://github.com/drobilica">github.com/drobilica</a> · 🔗 <a href="https://linkedin.com/in/dusan-stanic">/in/dusan-stanic</a></p>
 <hr>
 <h3>Summary</h3>
-<p>Platform engineer with a track record of building and operating Kubernetes infrastructure, CI/CD
-systems, and developer tooling across AWS and Azure. Focused on raising engineering velocity through
-reliable delivery pipelines, infrastructure automation, and production-grade observability.
-Experienced owning systems end to end — from initial design through migration, standardization, cost
-optimization, and on-call operations. Drawn to developer platform engineering: reducing friction for
-engineering teams through self-service tooling, golden paths, and platform abstractions.</p>
+<p>Platform engineer specializing in Kubernetes infrastructure and internal developer platforms.
+Own production AWS environments (EKS, networking, CI/CD, observability) spanning 3 clusters, ~300 pods, ~50 services, and ~60 repositories used by multiple engineering teams.
+Led cross-team platform standardization and zero-downtime migrations, including OS rollout and CI/CD consolidation, while optimizing infrastructure spend on a ~$20k/month baseline.
+Focused on building self-service platform capabilities, improving deployment reliability, and reducing operational complexity at scale.
+Experienced in standardizing platform patterns and enabling self-service infrastructure across engineering teams.</p>
 <hr>
 <h3>Core Skills</h3>
 <ul>
-<li><strong>Cloud:</strong> AWS (EKS, EC2, ALB/NLB, Route53, CloudFront), Azure</li>
-<li><strong>Orchestration:</strong> Kubernetes, Helm, Consul, Docker</li>
-<li><strong>IaC &amp; Config:</strong> Terraform, Ansible, Vault</li>
-<li><strong>CI/CD:</strong> GitHub Actions, GitLab CI, Jenkins, GitOps workflows</li>
-<li><strong>Observability:</strong> New Relic, Datadog, Prometheus, Grafana, Graphite</li>
-<li><strong>Networking:</strong> Load balancing (L4/L7), VPC peering, private networking, hybrid environments</li>
-<li><strong>Languages:</strong> Python, Go, Bash</li>
+<li><strong>Platform Engineering:</strong> Kubernetes (EKS), Helm, Docker, GitOps workflows, multi-cluster operations</li>
+<li><strong>Cloud:</strong> AWS (EKS, EC2, ALB/NLB, Route53, CloudFront), Azure (VMs, Blob Storage, Azure DevOps)</li>
+<li><strong>Infrastructure as Code:</strong> Terraform, Ansible</li>
+<li><strong>CI/CD:</strong> GitHub Actions, GitLab CI, Jenkins (legacy → modern migration), deployment gating, policy enforcement</li>
+<li><strong>Observability:</strong> Prometheus, Grafana, New Relic, Datadog (alerting, dashboards, incident noise reduction)</li>
+<li><strong>Networking:</strong> VPC design, load balancing (L4/L7), ingress patterns, private networking, hybrid connectivity</li>
+<li><strong>Security &amp; Secrets:</strong> Vault, AWS Secrets Manager, RBAC</li>
+<li><strong>Languages &amp; Scripting:</strong> Python, Go</li>
 </ul>
 <hr>
 <h3>Experience</h3>
 <h4>Dizzion / Frame — Staff Engineer</h4>
 <p><strong>Jan 2026 – Present</strong> · <em>promoted from Platform / DevOps Engineer</em></p>
 <ul>
-<li>Took on expanded ownership of technical direction and architecture across production platform
-infrastructure</li>
-<li>Driving standardization of platform tooling and delivery patterns across engineering teams</li>
-<li>Own and operate AWS environments including EKS, EC2, ALB/NLB, Route53, and hybrid networking</li>
+<li>Own technical direction and evolution of platform infrastructure across AWS environments (EKS, networking, CI/CD, observability)</li>
+<li>Drive standardization of platform tooling, delivery workflows, and infrastructure patterns across engineering teams</li>
+<li>Lead cross-team platform initiatives focused on reducing operational overhead and improving developer self-service capabilities across multiple engineering teams</li>
+<li>Influence architectural decisions and platform design through reviews, migration planning, and system-wide improvements</li>
 </ul>
 <h4>Dizzion / Frame — Platform / DevOps Engineer</h4>
 <p><strong>Jun 2024 – Dec 2025</strong></p>
 <ul>
-<li>Led company-wide OS standardization from CentOS 7 to Ubuntu across ~54 instances per environment,
-eliminating unpatched security exposure and improving patch compliance</li>
-<li>Executed phased rollout across dev, staging, and production with controlled service-by-service
-migration</li>
-<li>Reduced infrastructure cost by $100k+ through Reserved Instance planning and decommissioning
-unused legacy resources</li>
-<li>Designed and maintained CI/CD pipelines using GitHub Actions and Jenkins to support controlled
-production releases</li>
-<li>Defined and implemented observability strategy in New Relic, including alerting ownership and
-migration away from legacy monitoring stack</li>
-<li>Participated in on-call rotation, triaging production incidents using PagerDuty, New Relic, Slack,
-and service-level debugging</li>
-<li>Supported private networking, VPC peering, and hybrid connectivity across environments</li>
-<li>Drove migration and modernization of legacy services, including systems moving away from older
-Java-based stacks</li>
+<li>Led zero-downtime OS migration from CentOS 7 to Ubuntu across ~50 services and multiple environments using phased DNS cutover strategy, improving security posture and patch compliance  </li>
+<li>Drove platform standardization across CI/CD and packaging workflows, including transition from legacy Jenkins pipelines and RPM-based builds to GitHub Actions and DEB-based packaging  </li>
+<li>Reduced infrastructure cost on a ~$20k/month baseline through rightsizing, instance modernization, and architectural changes (e.g. bastion consolidation with NLB and cross-zone load balancing)  </li>
+<li>Defined and implemented observability strategy using New Relic, including alerting standards, dashboarding, and full migration away from legacy TICK stack, significantly reducing incident noise  </li>
+<li>Designed and maintained CI/CD pipelines used across multiple repositories and services, introducing reusable components (builders, notifications) and controlled deployment gates  </li>
+<li>Supported hybrid networking, VPC peering, and secure service connectivity across environments  </li>
+<li>Participated in on-call rotation, debugging production issues across infrastructure, networking, and application layers</li>
 </ul>
 <h4>VROOM — Senior DevOps Engineer</h4>
 <p><strong>Nov 2022 – Jun 2024</strong></p>
 <ul>
-<li>Managed AWS EKS environments across multiple clusters serving ~300 pods and ~50 microservices</li>
-<li>Supported high-traffic production workloads during peak US business hours</li>
-<li>Led cost-saving load balancer redesign by consolidating per-service NLBs into shared NLB
-architecture</li>
-<li>Maintained GitLab CI delivery pipelines supporting decentralized deployments across engineering
-teams</li>
-<li>Worked with Datadog for monitoring and alerting across distributed services</li>
-<li>Operated single-region Kubernetes environments with direct production deployment ownership across
-teams</li>
+<li>Owned Kubernetes-based platform infrastructure across 3 AWS EKS clusters (dev/staging/production), supporting ~300 pods and ~50 microservices  </li>
+<li>Managed full cluster lifecycle using Terraform, including provisioning, upgrades, and autoscaling (HPA, node groups)  </li>
+<li>Designed and implemented shared load balancer architecture, consolidating per-service NLB usage into centralized patterns, reducing infrastructure cost and operational complexity  </li>
+<li>Built and enforced CI/CD policies across ~60 repositories using GitLab CI, including approval workflows restricting production deployments to product owners  </li>
+<li>Enabled self-service deployment model for engineering teams (branch → staging → tagged release → production), supporting daily production releases  </li>
+<li>Implemented RBAC-based access control and secrets management using AWS Secrets Manager, enabling secure multi-team platform usage  </li>
+<li>Worked on ingress design and traffic routing strategies for scalable multi-service deployments  </li>
+<li>Participated in production on-call rotation, diagnosing issues across Kubernetes, networking, and application layers during peak traffic periods  </li>
+<li>Gained hands-on experience with Azure (VMs, Blob Storage, Azure DevOps) as part of cross-cloud platform exposure</li>
 </ul>
 <h4>Nutanix (Frame team) — Senior Software Engineer</h4>
 <p><strong>Dec 2020 – Oct 2022</strong></p>
 <ul>
-<li>Designed and implemented automated CI/CD pipelines using Jenkins, Docker, and Kubernetes, reducing
-time to production by ~30%</li>
+<li>Designed and implemented automated CI/CD pipelines using Jenkins, Docker, and Kubernetes, reducing time to production by ~30%</li>
 <li>Automated cloud infrastructure provisioning and operational tasks using Terraform and Ansible</li>
 <li>Migrated legacy systems to containerized deployments, improving scalability and resilience</li>
 <li>Integrated Vault into delivery workflows for secrets management and improved security posture</li>
 <li>Worked across AWS and Azure environments on cloud-based platform engineering initiatives</li>
-<li>Collaborated with cross-functional stakeholders to improve software delivery efficiency and DevOps
-practices</li>
+<li>Collaborated with cross-functional stakeholders to improve software delivery efficiency and DevOps practices</li>
 </ul>
 <h4>Endava — Senior DevOps Engineer</h4>
 <p><strong>Aug 2018 – Dec 2020</strong></p>
@@ -102,14 +92,12 @@ practices</li>
 <li>Introduced Apache Airflow for orchestration of complex data pipelines</li>
 <li>Implemented monitoring and performance tooling using Prometheus and Graphite</li>
 <li>Designed infrastructure with Terraform, Puppet, and Vault to improve security and reduce downtime</li>
-<li>Led containerization efforts using Docker and Kubernetes to improve delivery speed and system
-scalability</li>
+<li>Led containerization efforts using Docker and Kubernetes to improve delivery speed and system scalability</li>
 </ul>
 <h4>Société Générale — System Engineer, Core Infrastructure</h4>
 <p><strong>Jan 2017 – Aug 2018</strong></p>
 <ul>
-<li>Engineered monitoring and alerting systems using Grafana, Centreon/Nagios, and Percona Monitoring
-and Management</li>
+<li>Engineered monitoring and alerting systems using Grafana, Centreon/Nagios, and Percona Monitoring and Management</li>
 <li>Automated infrastructure and configuration workflows using Ansible and Puppet</li>
 <li>Improved server reliability through upgrades, tuning, and resource optimization</li>
 <li>Developed automation scripts in Python and C++ to reduce manual operational work</li>
@@ -126,11 +114,12 @@ and Management</li>
 <h3>Projects</h3>
 <h4>Self-Hosted Kubernetes Platform</h4>
 <ul>
-<li>Built and operate a 3-node Kubernetes homelab on Lenovo Tiny PCs</li>
-<li>Run personal applications, build systems, and AI coding agents on self-hosted infrastructure</li>
-<li>Expose services securely through Cloudflare Tunnels</li>
-<li>Automate infrastructure and deployment workflows with Terraform, Ansible, and scripting</li>
-<li>Use the environment to test production-like workflows and platform tooling</li>
+<li>Designed and operate a 3-node Kubernetes homelab to simulate production-like platform environments  </li>
+<li>Provision and manage infrastructure using Terraform and Ansible, mirroring real-world IaC workflows  </li>
+<li>Implement CI/CD pipelines and deployment workflows for services and internal tooling  </li>
+<li>Experiment with ingress patterns, service isolation, and workload segmentation  </li>
+<li>Expose services securely using Cloudflare Tunnels with controlled access  </li>
+<li>Use the environment to validate platform changes, tooling, and deployment strategies before applying similar patterns in production contexts</li>
 </ul>
 <hr>
 <h3>Education</h3>
@@ -138,5 +127,6 @@ and Management</li>
 <p>Software Engineering</p>
 
     </div>
+    <footer class="app-version">v0.1.2</footer>
   </body>
 </html>
