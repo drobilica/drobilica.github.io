@@ -19,21 +19,20 @@
   <body>
     <div id="cv">
       <h1>Dušan Stanić</h1>
-<h2>Platform / Cloud Engineer</h2>
-<p>📍 Belgrade, Serbia · 🌐 <a href="https://drobilica.com">drobilica.com</a> · 💻 <a href="https://github.com/drobilica">github.com/drobilica</a> · 🔗 <a href="https://linkedin.com/in/dusan-stanic">/in/dusan-stanic</a></p>
+<h2>Staff Platform / Cloud / DevOps Engineer</h2>
+<p>Belgrade, Serbia · <a href="https://drobilica.com">drobilica.com</a> · <a href="https://github.com/drobilica">github.com/drobilica</a> · <a href="https://linkedin.com/in/dusan-stanic">linkedin.com/in/dusan-stanic</a></p>
 <hr>
 <h3>Summary</h3>
-<p>Platform engineer specializing in Kubernetes infrastructure and internal developer platforms. Own production AWS environments spanning 3 EKS clusters, ~300 pods, ~50 services, and ~60 repositories.
-Led cross-team platform standardization and zero-downtime migrations, including OS rollout and CI/CD consolidation, while optimizing infrastructure spend on a ~$20k/month baseline.
-Build self-service platform capabilities that improve deployment reliability and reduce operational complexity.</p>
+<p>Staff platform engineer focused on Kubernetes, AWS infrastructure, CI/CD, and observability. Own production environments across 3 EKS clusters, ~300 pods, ~50 services, and ~60 repositories.</p>
+<p>Led cross-team standardization, zero-downtime migrations, CI/CD modernization, and infrastructure cost optimization on a ~$20k/month baseline. Strong track record building reliable internal platforms that reduce operational overhead for engineering teams.</p>
 <hr>
 <h3>Core Skills</h3>
 <ul>
 <li><strong>Platform Engineering:</strong> Kubernetes (EKS), Helm, Docker, GitOps workflows, multi-cluster operations</li>
 <li><strong>Cloud:</strong> AWS (EKS, EC2, ALB/NLB, Route53, CloudFront), Azure (VMs, Blob Storage, Azure DevOps)</li>
 <li><strong>Infrastructure as Code:</strong> Terraform, Ansible</li>
-<li><strong>CI/CD:</strong> GitHub Actions, GitLab CI, Jenkins (legacy → modern migration), deployment gating, policy enforcement</li>
-<li><strong>Observability:</strong> Prometheus, Grafana, New Relic, Datadog (alerting, dashboards, incident noise reduction)</li>
+<li><strong>CI/CD:</strong> GitHub Actions, GitLab CI, Jenkins (legacy to modern migration), deployment gating, policy enforcement</li>
+<li><strong>Observability:</strong> Prometheus, Grafana, New Relic, Datadog, Zabbix, Elasticsearch, Logstash (alerting, dashboards, centralized logging)</li>
 <li><strong>Networking:</strong> VPC design, load balancing (L4/L7), ingress patterns, private networking, hybrid connectivity</li>
 <li><strong>Security &amp; Secrets:</strong> Vault, AWS Secrets Manager, RBAC</li>
 <li><strong>Languages &amp; Scripting:</strong> Python, Go</li>
@@ -52,9 +51,9 @@ Build self-service platform capabilities that improve deployment reliability and
 <p><strong>Jun 2024 – Dec 2025</strong></p>
 <ul>
 <li>Led zero-downtime migration from CentOS 7 to Ubuntu across ~50 services using phased DNS cutovers, improving security posture and patch compliance</li>
-<li>Standardized CI/CD and packaging workflows, moving legacy Jenkins pipelines and RPM builds to GitHub Actions and DEB packaging</li>
+<li>Standardized multi-branch GitHub Actions and packaging workflows, moving legacy Jenkins pipelines and RPM builds to DEB packaging</li>
 <li>Reduced infrastructure cost on a ~$20k/month baseline through rightsizing, instance modernization, and bastion consolidation with NLB and cross-zone load balancing</li>
-<li>Implemented New Relic observability standards, dashboards, and migration from legacy TICK stack, reducing incident noise</li>
+<li>Led New Relic adoption with observability standards, dashboards, alerts, and TICK stack migration to reduce incident noise</li>
 <li>Built reusable CI/CD components across repositories and services, including builders, notifications, and controlled deployment gates</li>
 <li>Supported hybrid networking, VPC peering, and secure service connectivity across environments</li>
 <li>Participated in on-call rotation, debugging production issues across infrastructure, networking, and application layers</li>
@@ -66,7 +65,8 @@ Build self-service platform capabilities that improve deployment reliability and
 <li>Managed cluster lifecycle with Terraform, including provisioning, upgrades, HPA, and node groups</li>
 <li>Consolidated per-service NLB usage into shared load balancer patterns, reducing cost and operational complexity</li>
 <li>Built and enforced GitLab CI policies across ~60 repositories, including production deployment approvals</li>
-<li>Enabled self-service deployments for engineering teams (branch → staging → tagged release → production), supporting daily releases</li>
+<li>Enabled self-service deployments for engineering teams from branch to staging to tagged release to production, supporting daily releases</li>
+<li>Operated Datadog-backed monitoring and alerting across Kubernetes, infrastructure, and application workloads</li>
 <li>Implemented RBAC access control and AWS Secrets Manager for secure multi-team platform usage</li>
 <li>Designed ingress and traffic routing strategies for scalable multi-service deployments</li>
 <li>Participated in production on-call rotation, diagnosing Kubernetes, networking, and application issues during peak traffic periods</li>
@@ -77,6 +77,7 @@ Build self-service platform capabilities that improve deployment reliability and
 <li>Designed and implemented automated CI/CD pipelines using Jenkins, Docker, and Kubernetes, reducing time to production by ~30%</li>
 <li>Automated cloud infrastructure provisioning and operational tasks using Terraform and Ansible</li>
 <li>Migrated legacy systems to containerized deployments, improving scalability and resilience</li>
+<li>Spearheaded New Relic adoption for platform and application observability across engineering workflows</li>
 <li>Integrated Vault into delivery workflows for secrets management and improved security posture</li>
 <li>Worked across AWS and Azure environments on cloud-based platform engineering initiatives</li>
 <li>Collaborated with cross-functional stakeholders to improve software delivery efficiency and DevOps practices</li>
@@ -86,8 +87,7 @@ Build self-service platform capabilities that improve deployment reliability and
 <ul>
 <li>Led migration of major applications to Azure, improving scalability and availability</li>
 <li>Built backend systems and internal tooling using Python and Flask</li>
-<li>Introduced Apache Airflow for orchestration of complex data pipelines</li>
-<li>Implemented monitoring and performance tooling using Prometheus and Graphite</li>
+<li>Migrated Graphite and Whisper-based monitoring to Zabbix for clearer service visibility</li>
 <li>Designed infrastructure with Terraform, Puppet, and Vault to improve security and reduce downtime</li>
 <li>Led containerization efforts using Docker and Kubernetes to improve delivery speed and system scalability</li>
 </ul>
@@ -95,6 +95,7 @@ Build self-service platform capabilities that improve deployment reliability and
 <p><strong>Jan 2017 – Aug 2018</strong></p>
 <ul>
 <li>Engineered monitoring and alerting systems using Grafana, Centreon/Nagios, and Percona Monitoring and Management</li>
+<li>Implemented Elasticsearch centralized logging and Logstash transformations for custom UDP log streams</li>
 <li>Automated infrastructure and configuration workflows using Ansible and Puppet</li>
 <li>Improved server reliability through upgrades, tuning, and resource optimization</li>
 <li>Developed automation scripts in Python and C++ to reduce manual operational work</li>
@@ -108,15 +109,16 @@ Build self-service platform capabilities that improve deployment reliability and
 <li>Supported system security, patching, and day-to-day infrastructure operations</li>
 </ul>
 <hr>
-<h3>Projects</h3>
+<h3>Selected Projects</h3>
 <h4>Self-Hosted Kubernetes Platform</h4>
 <ul>
-<li>Operate a 3-node Kubernetes homelab for testing platform patterns</li>
-<li>Manage infrastructure with Terraform and Ansible</li>
-<li>Build CI/CD pipelines and deployment workflows for services and internal tooling</li>
-<li>Test ingress patterns, service isolation, and workload segmentation</li>
-<li>Expose services securely using Cloudflare Tunnels with controlled access</li>
-<li>Validate platform changes and deployment strategies before applying similar patterns in production</li>
+<li>Operate a 3-node Kubernetes lab to validate platform patterns before production use</li>
+<li>Manage infrastructure with Terraform and Ansible, including ingress, service isolation, and deployment workflows</li>
+</ul>
+<h4><a href="https://drobilica.com/cyphonfilter/">CyphonFilter</a></h4>
+<ul>
+<li>Built an offline-capable browser utility suite for developers, including Base64, hashing, JWT decoding, password generation, and AES-GCM encryption</li>
+<li>Implemented a client-side PWA using Vite, Web Crypto API, and vanilla JavaScript with no backend dependency</li>
 </ul>
 <hr>
 <h3>Education</h3>
@@ -157,6 +159,6 @@ Build self-service platform capabilities that improve deployment reliability and
         </svg>
       </button>
     </div>
-    <footer class="app-version">v0.1.4</footer>
+    <footer class="app-version">v1.0.0</footer>
   </body>
 </html>
