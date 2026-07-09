@@ -1,6 +1,6 @@
 # Dušan Stanić
 
-## Staff Platform / Cloud / DevOps Engineer
+## Staff Software Engineer, Platform Infrastructure
 
 Belgrade, Serbia · [drobilica.com](https://drobilica.com) · [github.com/drobilica](https://github.com/drobilica) · [linkedin.com/in/dusan-stanic](https://linkedin.com/in/dusan-stanic)
 
@@ -8,9 +8,11 @@ Belgrade, Serbia · [drobilica.com](https://drobilica.com) · [github.com/drobil
 
 ### Summary
 
-Staff platform engineer focused on Kubernetes, AWS infrastructure, CI/CD, and observability. Own production environments across 3 EKS clusters, ~300 pods, ~50 services, and ~60 repositories.
+Staff Software Engineer focused on platform infrastructure, Kubernetes, cloud systems, CI/CD, and observability. Own production infrastructure across 3 EKS clusters, ~300 pods, ~50 services, and ~60 repositories.
 
-Led cross-team standardization, zero-downtime migrations, CI/CD modernization, and infrastructure cost optimization on a ~$20k/month baseline. Strong track record building reliable internal platforms that reduce operational overhead for engineering teams.
+Build internal platforms, deployment systems, automation, and reliability tooling that improve developer productivity and reduce operational overhead. Led zero-downtime migrations, CI/CD modernization, infrastructure standardization, and cost optimization on a ~$20k/month AWS baseline.
+
+Strong background in distributed cloud infrastructure, production debugging, Python/Go automation, Kubernetes operations, networking, and secure multi-team platform design.
 
 ---
 
@@ -29,16 +31,16 @@ Led cross-team standardization, zero-downtime migrations, CI/CD modernization, a
 
 ### Experience
 
-#### Dizzion / Frame — Staff Engineer
+#### Dizzion / Frame — Staff Software Engineer
 
-**Jan 2026 – Present** · _promoted from Platform / DevOps Engineer_
+**Jan 2026 – Present** · _promoted from Platform / Senior Software Engineer_
 
 - Own technical direction for AWS platform infrastructure, including EKS, networking, CI/CD, and observability
 - Standardize platform tooling, delivery workflows, and infrastructure patterns across engineering teams
 - Lead platform initiatives that reduce operational overhead and improve developer self-service
 - Guide architectural decisions through reviews, migration planning, and system-wide improvements
 
-#### Dizzion / Frame — Platform / DevOps Engineer
+#### Dizzion / Frame — Platform / Senior Software Engineer
 
 **Jun 2024 – Dec 2025**
 
@@ -50,7 +52,7 @@ Led cross-team standardization, zero-downtime migrations, CI/CD modernization, a
 - Supported hybrid networking, VPC peering, and secure service connectivity across environments
 - Participated in on-call rotation, debugging production issues across infrastructure, networking, and application layers
 
-#### VROOM — Senior DevOps Engineer
+#### VROOM — Senior Software Engineer
 
 **Nov 2022 – Jun 2024**
 
