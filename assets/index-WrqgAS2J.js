@@ -5,4 +5,4 @@
       </div>
       <p class="card-desc">${e.description}</p>
       <span class="card-tag">${e.tags.join(` · `)}</span>
-    `,t.appendChild(n)}}function n(){let e=document.getElementById(`app-version`);e&&(e.textContent=`v0.1.1`)}t(),n();
+    `,t.appendChild(n)}}function n(){let e=document.getElementById(`app-version`);e&&(e.textContent=`v0.1.2`)}t(),n();
