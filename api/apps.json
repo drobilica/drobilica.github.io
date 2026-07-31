@@ -1,5 +1,18 @@
 [
   {
+    "id": "drobilica",
+    "name": "Drobilica",
+    "description": "Personal homepage for drobilica.com",
+    "url": "https://drobilica.com/",
+    "github": "https://github.com/drobilica/flight-deck-monorepo/tree/main/drobilica-com-landing-page",
+    "tags": ["portfolio", "infrastructure"],
+    "stack": "Vite, Tailwind CSS",
+    "status": "stable",
+    "type": "internal",
+    "featured": false,
+    "external": false
+  },
+  {
     "id": "cv",
     "name": "CV",
     "description": "Personal CV page with a clean, static presentation",
@@ -53,7 +66,7 @@
   },
   {
     "id": "geoconvert",
-    "name": "Geoconvert",
+    "name": "GeoConvert",
     "description": "Coordinate conversion utility for UTM to Google Maps outputs",
     "url": "https://drobilica.com/geoconvert/",
     "github": "https://github.com/drobilica/geoconvert",
@@ -103,6 +116,19 @@
     "featured": false,
     "external": false,
     "hidden": true
+  },
+  {
+    "id": "pong-js",
+    "name": "Pong JS",
+    "description": "Retro Pong browser game",
+    "url": "https://drobilica.com/pong-js/",
+    "github": "https://github.com/drobilica/flight-deck-monorepo/tree/main/pong-js",
+    "tags": ["canvas", "game"],
+    "stack": "Vite, HTML canvas",
+    "status": "stable",
+    "type": "internal",
+    "featured": false,
+    "external": false
   },
   {
     "id": "github-listing",
@@ -168,7 +194,6 @@
     "status": "experimental",
     "type": "internal",
     "featured": false,
-    "external": false,
-    "hidden": true
+    "external": false
   }
 ]
