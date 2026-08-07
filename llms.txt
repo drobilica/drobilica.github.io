@@ -1,0 +1,28 @@
+# Dušan Stanić
+
+> Personal profile and project site for Dušan Stanić, a Staff Software Engineer focused on infrastructure software, multi-cloud delivery, release orchestration, Kubernetes, and platform reliability.
+
+Dušan builds production systems in Go and Python across AWS, Microsoft Azure, Nutanix AHV, and Kubernetes. His work includes provider abstractions, Terraform and Ansible orchestration, protected production workflows, Kubernetes lifecycle tooling, networking, secrets, and observability.
+
+Location: Belgrade, Serbia.
+
+## Primary pages
+
+- [Homepage](https://drobilica.com/): Professional profile, engineering scope, and selected public work.
+- [CV](https://drobilica.com/cv/): Detailed professional experience and skills.
+- [Project directory](https://drobilica.com/github-listing/): Directory of published apps and projects.
+- [GitHub](https://github.com/drobilica): Source repositories and public engineering work.
+- [LinkedIn](https://www.linkedin.com/in/dusan-stanic/): Professional profile and work history.
+
+## Selected projects
+
+- [Cyphon Filter](https://drobilica.com/cyphonfilter/): In-browser cryptography toolbox with privacy-conscious defaults.
+- [Merge PDF](https://drobilica.com/merge-pdf/): Client-side PDF merging with no uploads.
+- [CDE](https://drobilica.com/cde/): Browser-based desktop environment in the style of Windows 95.
+- [PreventSleep](https://preventsleep.com/): Browser utility using the Wake Lock API to keep a screen awake.
+
+## Machine-readable resources
+
+- [Structured app registry](https://drobilica.com/api/apps.json): JSON metadata for published apps and external profiles.
+- [Sitemap](https://drobilica.com/sitemap.xml): Canonical URLs intended for indexing.
+- [Crawler policy](https://drobilica.com/robots.txt): Search and agent crawler permissions.
