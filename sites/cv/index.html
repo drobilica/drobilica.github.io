@@ -5,61 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Curriculum Vitae — Dušan Stanić, Staff Software Engineer specializing in infrastructure and platform systems"
+      content="Curriculum Vitae — Dušan Stanić, Platform Engineer at HYPR"
     />
-    <title>
-      Dušan Stanić — Staff Software Engineer — Infrastructure &amp; Platforms
-    </title>
+    <title>Dušan Stanić — Platform Engineer CV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/cv/assets/index-DlJ8wL-4.js"></script>
-    <link rel="stylesheet" crossorigin href="/cv/assets/index-DzE6vya6.css">
+    <script type="module" crossorigin src="/cv/assets/index-vEZbvgwZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/cv/assets/index-TsAITaf0.css">
   </head>
   <body>
     <div id="cv">
       <h1>Dušan Stanić</h1>
-<h2>Staff Software Engineer — Infrastructure &amp; Platforms</h2>
+<h2>Platform Engineer</h2>
 <p>Belgrade, Serbia · <a href="https://drobilica.com">drobilica.com</a> · <a href="https://github.com/drobilica">github.com/drobilica</a> · <a href="https://linkedin.com/in/dusan-stanic">linkedin.com/in/dusan-stanic</a></p>
 <hr>
 <h3>Summary</h3>
-<p>Staff Software Engineer specializing in infrastructure and platform systems, building production software in Go and Python across AWS, Azure, Nutanix AHV, and Kubernetes. Technical lead for multi-cloud deployment architecture, release orchestration, protected production workflows, and reliability across US and EU environments. Hands-on individual contributor who decomposes complex initiatives, guides engineers through implementation, and teaches reusable patterns across teams.</p>
-<hr>
-<h3>Core Skills</h3>
-<ul>
-<li><strong>Languages:</strong> Go, Python</li>
-<li><strong>Software &amp; Systems:</strong> Distributed production systems, infrastructure software, multi-cloud provider abstractions, workflow and release orchestration, automated testing</li>
-<li><strong>Cloud &amp; Platforms:</strong> AWS, Azure, Nutanix AHV, Kubernetes (EKS), Docker, Helm</li>
-<li><strong>Infrastructure Delivery:</strong> Terraform, Ansible, GitHub Actions, GitLab CI, Jenkins</li>
-<li><strong>Networking &amp; Reliability:</strong> TCP/IP, DNS, VPC networking, L4/L7 load balancing, ingress, hybrid connectivity, on-call debugging</li>
-<li><strong>Observability &amp; Security:</strong> New Relic, Datadog, Prometheus, Grafana, Vault, AWS Secrets Manager, RBAC</li>
-</ul>
+<p>Platform Engineer at HYPR. I built Blaze on the Nutanix Frame team. At Dizzion / Frame, every engineering team used the Go tool to run deployment checks and manage releases for 12 services across AWS, Azure, and Nutanix AHV.</p>
 <hr>
 <h3>Experience</h3>
+<h4>HYPR</h4>
+<p><strong>Platform Engineer · Sep 2026 – Present</strong></p>
 <h4>Dizzion / Frame</h4>
-<p><strong>Staff Software Engineer · Jan 2026 – Present</strong><br />
+<p><strong>Staff Software Engineer · Jan 2026 – May 2026</strong><br />
 <em>Platform / Senior Software Engineer · Jun 2024 – Dec 2025</em></p>
 <ul>
-<li>Architected and built Blaze, a large, tested Go CLI used throughout company delivery pipelines, with one provider interface for AWS, Azure, and Nutanix AHV</li>
-<li>Orchestrated Terraform, Ansible, inventory generation, environment creation, and multi-server deployment; managed release versions for 12 services and supported sequential or parallel rollouts</li>
-<li>Kept Blaze as the deployment interface while pipeline execution moved from Jenkins to GitHub Actions, so engineers did not have to change how they deployed</li>
-<li>Defined protected-environment workflows and consistent US/EU production rollouts, including a zero-downtime migration of five services from CentOS 7 to hardened Ubuntu images with supported OpenSSL, OpenJDK, and Python 3.11 baselines</li>
-<li>Guided 2–4 engineers by decomposing initiatives and reviewing implementation; led cross-team technical education while replacing TICK with New Relic and standardizing APM adoption</li>
+<li>Kept Blaze as the deployment interface during the move from Jenkins to GitHub Actions so engineers could keep the same release workflow</li>
+<li>Migrated five production services from CentOS 7 to hardened Ubuntu images with zero downtime</li>
+<li>Defined protected deployment workflows for consistent production rollouts across US and EU environments</li>
+<li>Orchestrated Terraform, Ansible, inventory generation, environment creation, and multi-server deployment, with support for sequential and parallel rollouts</li>
+<li>Broke down initiatives and reviewed implementation for 2–4 engineers, and trained teams on application performance monitoring during the move from TICK to New Relic</li>
 </ul>
 <h4>VROOM — Senior Software Engineer</h4>
 <p><strong>Nov 2022 – Jun 2024</strong></p>
 <ul>
+<li>Built protected GitLab CI workflows that gave teams a self-service path from branch deployments through tagged production releases</li>
 <li>Developed Python tooling for Kubernetes upgrades, platform status reporting, and alerting automation</li>
 <li>Engineered production EKS cluster lifecycle with Terraform, including upgrades, autoscaling, node groups, RBAC, and secrets integration</li>
-<li>Built protected GitLab CI workflows that gave teams a self-service path from branch deployments through tagged production releases</li>
 <li>Simplified service networking by consolidating per-service NLBs into shared load-balancing and ingress patterns; used Datadog and on-call debugging across Kubernetes, networking, and applications</li>
 </ul>
 <h4>Nutanix (Frame team) — Senior Software Engineer</h4>
 <p><strong>Dec 2020 – Oct 2022</strong></p>
 <ul>
+<li>Designed and built Blaze, a Go CLI for multi-cloud deployments</li>
 <li>Automated AWS and Azure infrastructure provisioning and delivery workflows with Terraform and Ansible</li>
 <li>Built CI/CD and deployment systems with Jenkins, Docker, and Kubernetes</li>
 <li>Migrated legacy services to containerized deployments, improving delivery consistency and operability</li>
@@ -82,6 +73,16 @@
 <ul>
 <li>Supported Linux production environments across RHEL, Ubuntu, and Debian</li>
 <li>Managed VMware vSphere, storage, backups, web services, and monitoring for day-to-day reliability</li>
+</ul>
+<hr>
+<h3>Core Skills</h3>
+<ul>
+<li><strong>Languages:</strong> Go, Python</li>
+<li><strong>Software &amp; Systems:</strong> Distributed production systems, infrastructure software, multi-cloud provider abstractions, workflow and release orchestration, automated testing</li>
+<li><strong>Cloud &amp; Platforms:</strong> AWS, Azure, Nutanix AHV, Kubernetes (EKS), Docker, Helm</li>
+<li><strong>Infrastructure Delivery:</strong> Terraform, Ansible, GitHub Actions, GitLab CI, Jenkins</li>
+<li><strong>Networking &amp; Reliability:</strong> TCP/IP, DNS, VPC networking, L4/L7 load balancing, ingress, hybrid connectivity, on-call debugging</li>
+<li><strong>Observability &amp; Security:</strong> New Relic, Datadog, Prometheus, Grafana, Vault, AWS Secrets Manager, RBAC</li>
 </ul>
 <hr>
 <h3>Education</h3>

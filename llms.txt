@@ -1,24 +1,17 @@
 # Dušan Stanić
 
-> Hiring-focused profile for Dušan Stanić, a Staff Software Engineer focused on infrastructure software, multi-cloud delivery, Kubernetes, and platform reliability.
+> Dušan Stanić is a Platform Engineer at HYPR with experience in release systems and multi-cloud infrastructure.
 
-Dušan builds production systems in Go and Python across AWS, Microsoft Azure, Nutanix AHV, and Kubernetes. His work includes Blaze, a single delivery interface orchestrating releases for 12 services; a zero-downtime migration of five services; protected US and EU production workflows; and technical guidance for 2–4 engineers. He is open to Staff Platform and Infrastructure roles.
+Dušan built Blaze on the Nutanix Frame team. At Dizzion / Frame, every engineering team used the Go tool to run deployment checks and manage releases for 12 services across AWS, Azure, and Nutanix AHV. At Dizzion / Frame, Dušan also migrated five production services from CentOS 7 to Ubuntu without downtime.
 
 Location: Belgrade, Serbia.
 
 ## Primary pages
 
-- [Homepage](https://drobilica.com/): Professional impact, capabilities, and selected public work.
+- [Homepage](https://drobilica.com/): Short professional profile and links.
 - [CV](https://drobilica.com/cv/): Detailed professional experience and skills.
-- [Project directory](https://drobilica.com/github-listing/): Directory of published apps and projects.
 - [GitHub](https://github.com/drobilica): Source repositories and public engineering work.
 - [LinkedIn](https://www.linkedin.com/in/dusan-stanic/): Professional profile and work history.
-
-## Selected projects
-
-- [Cyphon Filter](https://drobilica.com/cyphonfilter/): In-browser cryptography toolbox with privacy-conscious defaults.
-- [Merge PDF](https://drobilica.com/merge-pdf/): Client-side PDF merging with no uploads.
-- [PreventSleep](https://preventsleep.com/): Browser utility using the Wake Lock API to keep a screen awake.
 
 ## Machine-readable resources
 
