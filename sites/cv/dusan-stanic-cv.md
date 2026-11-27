@@ -86,9 +86,7 @@ _Same product and team as Dizzion / Frame above._
 
 ### Projects
 
-- **[tarlink](https://github.com/drobilica/tarlink)** (Go, Apache-2.0): rootless Linux application manager that verifies artifact bytes before install, activates atomically, and keeps the previous version for rollback
-- **[opencode-agent-images](https://github.com/drobilica/opencode-agent-images)**: non-root container images for coding agents, pinned by digest with immutable version tags, SBOM and provenance attestations, and keyless Sigstore signatures
-- **Home k3s cluster** (private): two nodes managed through Argo CD GitOps with cert-manager and Gateway API; local LLMs through Ollama on a 16 GB GPU
+- **[tarlink](https://github.com/drobilica/tarlink)** (Go, Apache-2.0): rootless Linux application manager that verifies every download against its pinned hash, activates versions atomically, and keeps the previous version for rollback; 80+ releases. Its [registry](https://github.com/drobilica/tarlink-registry) holds strict declarative manifests pinned to SHA-256/512 digests, with no scripts or hooks, validated in CI
 
 ---
 
