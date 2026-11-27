@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Curriculum Vitae — Dušan Stanić, Platform Engineer at HYPR"
+      content="Curriculum Vitae — Dušan Stanić, Platform &amp; Cloud Infrastructure Engineer"
     />
-    <title>Dušan Stanić — Platform Engineer CV</title>
+    <title>
+      Dušan Stanić — Platform &amp; Cloud Infrastructure Engineer CV
+    </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/cv/assets/index-vEZbvgwZ.js"></script>
-    <link rel="stylesheet" crossorigin href="/cv/assets/index-TsAITaf0.css">
+    <link rel="stylesheet" crossorigin href="/cv/assets/index-CUKLDM0G.css">
   </head>
   <body>
     <div id="cv">
@@ -24,48 +25,52 @@
 <p>Belgrade, Serbia · <a href="https://drobilica.com">drobilica.com</a> · <a href="https://github.com/drobilica">github.com/drobilica</a> · <a href="https://linkedin.com/in/dusan-stanic">linkedin.com/in/dusan-stanic</a></p>
 <hr>
 <h3>Summary</h3>
-<p>Cloud infrastructure engineer with 11 years building and operating production infrastructure. Currently Platform Engineer at HYPR, where I build AI agents into platform workflows; previously Staff Software Engineer at Dizzion / Frame. I design AWS networking and infrastructure in Terraform, operate Kubernetes/EKS, and write infrastructure software in Go and Python. At Frame I built Blaze, the Go CLI every engineering team used to deploy across AWS, Azure, and Nutanix AHV, and ran isolated AWS GovCloud and commercial stacks for government and enterprise customers.</p>
+<p>Cloud infrastructure engineer with 11 years building and operating production infrastructure and the software that runs it. I design AWS networking and isolated environments in Terraform, run Kubernetes/EKS, and write deployment tooling in Go and Python. I spent nearly four years on Frame, a multi-cloud desktop-streaming platform, across two owners: I co-developed and later owned Blaze, the Go CLI behind every release across AWS, Azure, and Nutanix AHV, and worked on deployments spanning a separate AWS GovCloud stack, on-prem customer clusters, and customer-owned cloud accounts. Now at HYPR, building LLM agents into CI/CD and platform operations.</p>
 <hr>
 <h3>Experience</h3>
 <h4>HYPR — Platform Engineer</h4>
 <p><strong>Sep 2026 – Present</strong></p>
 <ul>
 <li>Operate the Kubernetes/EKS platform, AWS infrastructure in Terraform, and CI/CD release tooling for an identity security product</li>
-<li>Built a central service that investigates CI/CD failures for pipelines across 5 engineering teams, grouping duplicate failures, finding root causes, and proposing fixes, and reusing verified fixes to keep LLM costs low</li>
-<li>Added AI agent review to merge requests, checking for security issues and code quality before human review</li>
-<li>Built AI-assisted approval workflows for internal access requests</li>
+<li>Deploy and upgrade the product inside customers&#39; own cloud accounts alongside the hosted service</li>
+<li>Built an LLM service that triages failed CI/CD pipelines for five engineering teams: it groups duplicate failures, proposes a likely root cause and fix, and reuses previously verified fixes instead of paying for a new model call</li>
+<li>Added an agent review step to merge requests that flags security and code-quality issues before a human reviews</li>
+<li>Built an agent that enriches internal access requests with context on the requester, timing, and resource, so the human approver decides with more information</li>
 </ul>
-<h4>Dizzion / Frame — Senior, then Staff Software Engineer</h4>
+<h4>Dizzion / Frame — Staff Member of Technical Staff</h4>
 <p><strong>Jun 2024 – May 2026</strong><br />
-<em>Rejoined the Frame team after Dizzion acquired Frame from Nutanix; promoted to Staff Software Engineer in Jan 2026.</em></p>
+<em>Rejoined the Frame team after Dizzion acquired Frame from Nutanix; promoted from Senior to Staff in Jan 2026. Role ended when Dizzion closed its Serbian entity.</em></p>
 <ul>
-<li>Owned Blaze, the deployment interface 40+ engineers used to release 12 services to 150+ servers across 6 AWS regions, Azure, and Nutanix AHV</li>
-<li>Deployed and operated fully separate, isolated stacks for government customers in AWS GovCloud and for commercial customers in AWS commercial regions, each with its own control plane, per-environment AWS KMS keys, and KMS-encrypted data at rest</li>
+<li>Primary owner of Blaze, the Go deployment CLI behind every Frame release: 40+ engineers used it to ship 12 services to 150+ servers across development, staging, and production in six AWS regions, Azure, and Nutanix AHV, orchestrating Terraform, Ansible, and generated inventories with sequential or parallel rollouts; rewrote its AWS provider</li>
+<li>Ran the control plane that launched and managed customers&#39; Windows VDI workload VMs inside their own cloud accounts, while all orchestration stayed in Frame-owned infrastructure</li>
+<li>Built the Terraform and Blaze deployment path for Frame&#39;s separate AWS GovCloud stack, which shares no control plane, network, or KMS keys with the commercial regions and is operated by US-based staff</li>
 <li>Designed AWS VPCs in Terraform (subnets, route tables, NAT gateways, security groups, Route 53 DNS) and connected VPCs across multiple accounts through Transit Gateway</li>
-<li>Operated multi-region failover with standby stacks and DNS-based traffic shifting, ran disaster recovery drills, and served in the primary on-call rotation, writing root-cause analyses for production incidents</li>
-<li>Owned the platform roadmap and set the deployment standards followed by all engineering teams, including protected workflows for production rollouts across US and EU environments</li>
-<li>Led 2–4 engineers through the zero-downtime migration of five production services from CentOS 7 to hardened Ubuntu images, splitting the work and reviewing their implementation</li>
-<li>Led the cross-team moves from Jenkins to GitHub Actions and from TICK to New Relic, keeping Blaze as the release interface so engineers kept the same workflow</li>
-<li>Built provisioning and day-2 automation orchestrating Terraform, Ansible, inventory generation, environment creation, and multi-server deployment, with sequential and parallel rollouts</li>
+<li>Ran multi-region failover with standby stacks and DNS traffic shifting, and took part in disaster recovery drills</li>
+<li>Primary on-call for production; wrote the root-cause analyses and shipped the follow-up fixes</li>
+<li>Set deployment architecture and release standards for Frame engineering, including protected production workflows across US and EU environments</li>
+<li>Led 2–4 engineers through a zero-downtime migration of five production services (Python, Elixir, Java) from CentOS 7 to hardened Ubuntu AMIs</li>
+<li>Moved pipeline triggers from Jenkins to GitHub Actions behind an unchanged Blaze interface, so no team changed how it deployed</li>
+<li>Led the move from the TICK stack to New Relic and standardized APM adoption across teams</li>
+<li>Added Debian packaging to Blaze and led the company-wide migration of every shipped service from RPM to DEB</li>
 </ul>
-<h4>VROOM — Senior Software Engineer</h4>
-<p><strong>Nov 2022 – Jun 2024</strong></p>
+<h4>Vroom — Senior Software Engineer</h4>
+<p><strong>Nov 2022 – Jun 2024</strong><br />
+<em>Left after Vroom wound down its e-commerce business.</em></p>
 <ul>
-<li>Engineered the lifecycle of three production EKS clusters across two AWS accounts with Terraform, including upgrades, autoscaling, node groups, RBAC, and secrets integration</li>
-<li>Redesigned service networking on AWS by consolidating per-service NLBs into shared load-balancing and ingress patterns</li>
+<li>Managed three production EKS clusters across two AWS accounts with Terraform: version upgrades, node groups and autoscaling, RBAC, and secrets</li>
+<li>Consolidated dedicated per-service ALBs into six shared ALB ingress groups through the AWS Load Balancer Controller, cutting load-balancer spend by about $50K a year, and wrote the Python tool that raised the manifest changes as merge requests across service repos</li>
 <li>Debugged production incidents on call across networking, Kubernetes, and application layers, using Datadog</li>
-<li>Developed Python tooling for Kubernetes upgrades, platform status reporting, and alerting automation</li>
+<li>Wrote Python tooling for Kubernetes upgrades, platform status reporting, and alerting automation</li>
 <li>Built protected GitLab CI workflows that gave teams a self-service path from branch deployments through tagged production releases, supporting daily production deployments</li>
 </ul>
-<h4>Nutanix (Frame team) — Senior Software Engineer</h4>
-<p><strong>Dec 2020 – Oct 2022</strong></p>
+<h4>Nutanix (Frame team) — Member of Technical Staff 4</h4>
+<p><strong>Dec 2020 – Oct 2022</strong><br />
+<em>Same product and team as Dizzion / Frame above.</em></p>
 <ul>
-<li>Designed and built Blaze, a Go CLI for multi-cloud deployments across AWS, Azure, and Nutanix AHV, including on-prem AHV clusters on customer premises</li>
+<li>Co-developed Blaze, the Go CLI that gave Frame one deployment interface across AWS, Azure, and Nutanix AHV, including on-prem AHV clusters on customer premises; wrote its Azure provider</li>
 <li>Built and operated private connectivity between Nutanix AHV, AWS, and Azure environments using site-to-site VPN and AWS Direct Connect, with the AWS VPCs and Transit Gateway routing behind it defined in Terraform</li>
 <li>Ran the control-plane services that orchestrated GPU-backed desktop workloads for Frame, a VDI platform spanning public cloud and Nutanix AHV</li>
 <li>Traced a production incident to untested code reaching release, then added automated pre-deploy checks and protected deployment workflows that block unverified releases</li>
-<li>Automated AWS and Azure infrastructure provisioning and delivery workflows with Terraform and Ansible</li>
-<li>Integrated Vault for secure secret handling and repeatable delivery workflows</li>
 <li>Migrated legacy services to containerized deployments on Docker and Kubernetes</li>
 </ul>
 <h4>Endava — Senior DevOps Engineer</h4>
@@ -77,25 +82,30 @@
 <h4>Société Générale — System Engineer, Core Infrastructure</h4>
 <p><strong>Jan 2017 – Aug 2018</strong></p>
 <ul>
-<li>Developed Python automation for configuration workflows and transformed custom UDP log streams with Logstash for centralized Elasticsearch logging</li>
-<li>Engineered monitoring and alerting with Grafana, Centreon/Nagios, and Percona Monitoring and Management; improved server reliability through upgrades and tuning</li>
+<li>Built and tuned a redundant three-node Elasticsearch, Logstash, and Kibana deployment ingesting custom UDP and Beats sources, plus Python configuration automation and Grafana, Centreon/Nagios, and Percona monitoring</li>
 </ul>
 <h4>NetCast — Linux System Engineer</h4>
 <p><strong>Oct 2015 – Dec 2016</strong></p>
 <ul>
-<li>Supported Linux production environments across RHEL, Ubuntu, and Debian</li>
-<li>Managed VMware vSphere, storage, backups, web services, and monitoring for day-to-day reliability</li>
+<li>Ran Linux production hosting (RHEL, Ubuntu, Debian) on VMware vSphere, including storage, backups, and monitoring</li>
+</ul>
+<hr>
+<h3>Projects</h3>
+<ul>
+<li><strong><a href="https://github.com/drobilica/tarlink">tarlink</a></strong> (Go, Apache-2.0): rootless Linux application manager that verifies artifact bytes before install, activates atomically, and keeps the previous version for rollback</li>
+<li><strong><a href="https://github.com/drobilica/opencode-agent-images">opencode-agent-images</a></strong>: non-root container images for coding agents, pinned by digest with immutable version tags, SBOM and provenance attestations, and keyless Sigstore signatures</li>
+<li><strong>Home k3s cluster</strong> (private): two nodes managed through Argo CD GitOps with cert-manager and Gateway API; local LLMs through Ollama on a 16 GB GPU</li>
 </ul>
 <hr>
 <h3>Core Skills</h3>
 <ul>
-<li><strong>Cloud &amp; Compute:</strong> AWS (commercial and GovCloud), Azure, Nutanix AHV, multi-account Kubernetes (EKS), autoscaling, Docker, Helm</li>
-<li><strong>Networking:</strong> AWS VPC design, Transit Gateway, Direct Connect, site-to-site VPN, hybrid and cross-cloud connectivity, L4/L7 load balancing, ingress, TCP/IP, DNS</li>
-<li><strong>Languages:</strong> Go, Python</li>
-<li><strong>AI Agents:</strong> LLM agents for code review, CI/CD failure investigation, and access-request review</li>
-<li><strong>Infrastructure as Code &amp; Delivery:</strong> Terraform, Ansible, GitHub Actions, GitLab CI, Jenkins</li>
-<li><strong>Security &amp; Isolation:</strong> AWS KMS, isolated GovCloud and commercial environments, on-prem customer deployments, Vault, AWS Secrets Manager, RBAC, hardened OS images</li>
-<li><strong>Reliability &amp; Observability:</strong> Multi-region failover, disaster recovery drills, on-call incident debugging, root-cause analysis, New Relic, Datadog, Prometheus, Grafana</li>
+<li><strong>Cloud &amp; Compute:</strong> AWS (commercial and GovCloud), Azure, Nutanix AHV, Kubernetes (EKS, multi-account), Docker</li>
+<li><strong>Networking:</strong> AWS VPC design, Transit Gateway, Direct Connect, site-to-site VPN, hybrid and cross-cloud connectivity, L4/L7 load balancing, ingress, DNS</li>
+<li><strong>Languages &amp; OS:</strong> Go, Python, Linux (RHEL, Ubuntu, Debian)</li>
+<li><strong>AI &amp; Agents:</strong> LLM agents for CI/CD failure triage, merge-request review, and access-request context; daily work with Claude Code, Codex, and OpenCode across model providers; local models with Ollama</li>
+<li><strong>Infrastructure as Code &amp; Delivery:</strong> Terraform, Ansible, GitHub Actions, GitLab CI, Jenkins, Argo CD</li>
+<li><strong>Security &amp; Isolation:</strong> Customer-account (BYOC) and on-prem deployments, separate GovCloud stack, AWS KMS, Vault, RBAC, hardened OS images</li>
+<li><strong>Reliability &amp; Observability:</strong> Multi-region failover, disaster recovery drills, on-call incident response, root-cause analysis, New Relic, Datadog, Grafana</li>
 </ul>
 <hr>
 <h3>Education</h3>
@@ -113,14 +123,15 @@
       >
         MD
       </a>
-      <button
+      <a
         class="export-action export-action-pdf"
-        type="button"
-        aria-label="Export CV as PDF"
-        title="Export PDF"
+        href="/cv/dusan-stanic-cv.pdf"
+        download="dusan-stanic-cv.pdf"
+        aria-label="Download CV as PDF"
+        title="Download PDF"
       >
         PDF
-      </button>
+      </a>
       <button
         class="export-toggle"
         type="button"
