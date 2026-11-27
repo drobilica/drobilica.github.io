@@ -10,6 +10,7 @@ Location: Belgrade, Serbia.
 
 - [Homepage](https://drobilica.com/): Short professional profile and links.
 - [CV](https://drobilica.com/cv/): Detailed professional experience and skills.
+- [Project directory](https://drobilica.com/github-listing/): Directory of published apps and projects.
 - [GitHub](https://github.com/drobilica): Source repositories and public engineering work.
 - [LinkedIn](https://www.linkedin.com/in/dusan-stanic/): Professional profile and work history.
 
